@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Departamento de Educación Física y Deporte</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description"
+    content="El Departamento de Educación Física y el Deporte de nuestra institución, les propone a los estudiantes las siguientes actividades las cuales las pueden hacer en forma recreativa o competitiva">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5,maximum-scale=5">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="jquery.min.js"></script>
+  <script src="pagination/paginga.jquery.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function () {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      }
+      else {
+        $('html, body').show();
+      }
+    });
+  </script>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="static/saebu-logo.png" />
+</head>
+
+<body>
+
+
+  <div class="content3">
+
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <div class="navbar">
+        <a href="http://saebu.unsl.edu.ar"> <img src="static/saebu.png" width="50" height="100" loading="lazy" alt="Saebu Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+
+
+
+
+
+        <ul class="nav no-search">
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU
+                  Villa de Merlo</a></li>
+              <li style='margin-right: 30px;' class="nav-item"><a href="http://saebu.unsl.edu.ar">Inicio</a></li>
+              <li style='margin-right: 30px;' class="nav-item" class="nav-item"><a href="http://saebu.unsl.edu.ar/ingresantes">Ingresantes 2022</a></li>
+              <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+                  href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">V Mercedes</a></li>
+              <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+                  href="http://saebu.unsl.edu.ar/saebu-merlo">V Merlo</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo social</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/becas">Dpto.
+                  Becas</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro de Salud Estudiantil</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="#">Comedor Universitario</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/dpto-deporte">Deporte</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a></li>
+              <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada">Dpto. Mesa
+                  de Entrada</a></li>
+              <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-compras">Dpto. Compras</a></li>
+              <li style="margin-right:30px;" class="nav-item"><a
+                  href="http://saebu.unsl.edu.ar/institucional">Institucional</a></li>
+              <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/camping-universitario">Camping
+                  universitario</a></li>
+              <li style="margin-right:30px;" class="nav-item"><a href="#contacto">contacto</a></li>
+              <li style="margin-right:30px;" class="nav-item"><a href="http://saebu.unsl.edu.ar/noticias">Noticias</a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa
+              Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+  <nav class="navbar-display-0" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Departamentos</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/becas" style="font-size: 14px;">Becas</a>
+          </li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-compras" style="font-size: 12px;">Dpto.
+              Compras y
+              Contrataciones</a></li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Comedor Universitario</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-deporte" style="font-size: 11px;">Dpto. Eduación física y
+              deporte</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Gimnasio</a></li>
+              <li class="menu-item"><a href="#">Club universitario</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada"
+              style="font-size: 14px;">Dpto. Mesas de Entrada</a></li>
+
+          <li class="menu-item">
+
+            <a href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo Social</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro
+                  de Salud</a>
+              </li>
+
+              <ul class="sub-menu">
+
+              </ul>
+          </li>
+
+        </ul>
+
+      </li>
+
+
+      <li class="menu-item">
+
+        <a href="http://saebu.unsl.edu.ar/camping-universitario">Camping Universitario</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/historia-del-camping">Historia del
+              Camping</a>
+          </li>
+
+          <ul class="sub-menu">
+
+          </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <div id="parallax-world-of-ugg">
+
+
+    <section>
+      <div class="parallax-nine">
+
+          
+
+        <h2>Departamento de Educación Física y Deporte</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="block">
+
+        <p><span class="first-character sc">P</span>ara nuestra Universidad la Educación Física y el Deporte se
+          constituye como un elemento fundamental del sistema educativo y su práctica es importante en el mantenimiento
+          de la salud y por lo tanto es un factor corrector de desequilibrios sociales contribuyendo al desarrollo de la
+          igualdad entre los alumnos y toda la comunidad, crea hábitos favorecedores para la inserción social y asimismo
+          su práctica en equipo fomenta la solidaridad. </p>
+        <p class="line-break margin-top-10"></p>
+
+
+        <p class="margin-top-10">
+          <br>Todo esto conforma a la Educación Física y el Deporte como elemento determinante en la calidad de vida de
+          las personas y más aún en los estudiantes formándolos en valores con sentido de pertenencia a la institución.
+          <br>El Departamento de Educación Física y el Deporte de nuestra institución, les propone a los estudiantes las
+          siguientes actividades las cuales las pueden hacer en forma recreativa o competitiva: <br><b>Disciplinas:</b>
+        <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0 0 0 60px;">
+          <li> Atletismo</li>
+          <li> Aeróbica</li>
+          <li> Ajedrez.</li>
+          <li> Básquetbol</li>
+          <li> Danza.</li>
+          <li> Gimnasio </li>
+          <li> Hándball</li>
+          <li> Hockey.</li>
+          <li> Futbol 11 y 5</li>
+          <li> Rugby</li>
+          <li> Karate</li>
+          <li> Yoga</li>
+          <li> Voleibol</li>
+          <li> Ritmos Latinos</li>
+          <li> Cestoball</li>
+          <li> Funcional</li>
+        </ul>
+        <p><span class="first-character sc">E</span>n ambas ramas sin costo alguno, contando con un seguro de asistencia
+          para las actividades deportivas. <br><br>
+          Tenemos 3 (tres) centros donde se pueden realizar distintas actividades. Centro San Luis , Centro Villa
+          Mercedes y Centro Villa de Merlo. <br><br>
+          Los estudiantes que participen de los Deportes competitivos tiene la posibilidad de representar a la
+          Universidad Nacional de San Luis en los JUR (Juegos Universitarios Regionales) , realizadas en las provincias
+          de Mendoza , San Juan, La Rioja o en San Luis de acuerdo al cronograma de la FEDUA (Federación del Deporte
+          Universitario Argentina). <br><br>
+          Este año creamos el Club Universitario Universidad Nacional de San Luis cuya misión es vincular a todos los
+          integrantes de la población universitaria y la comunidad en general a través del deporte y la salud,
+          intentando lograr que más niños, adolescentes, adultos y personas discapacitadas tengan la posibilidad de
+          disfrutar de una vida Deportiva, Recreativa, Social y Cultural en un ambiente acorde a sus necesidades e
+          intereses.
+        </p>
+        <p class="line-break margin-top-10">
+        <h3><b> Informes:</b> </h3>
+        </p> <br>
+
+        <p>
+          <b> SAEBU</b> <br>
+          Departamento de Educación Física y Deporte UNSL <br>
+          <a href="https://goo.gl/maps/5cimYqFkxhpH32zR8" rel="noopener" target="_blank"> Rivadavia 1029 . 1er Piso
+            Comedor Universitario </a> <br>
+          <b> Lunes a viernes </b>de <b> 8:00 a 13:00 hs y de 18:00 a 20:00 hs </b><br>
+          Teléfono : <a href="tel:26644426046">2664 4426046</a> <br>
+          Email: <a href="mailto:unsldeportes@gmail.com"> unsldeportes@gmail.com </a><br>
+        </p>
+        </p>
+
+      </div>
+
+      <p class="line-break margin-top-10">NOTICIAS</p>
+
+    </section>
+
+
+
+  </div>
+
+  <div class="paginate-no-scroll 5" id='noticias'>
+    <div class="items" style="padding-left:15px;">
+
+           <!--inicio-->
+
+           <div>
+            <div class="card">
+              <h2>📢Oferta deportiva del Departamento de Educación Física y Deporte 2022.</h2>
+              <h3>
+              1 de Abril del 2022
+              </h3>
+              <div class="fakeimg-h">
+                <div class="simple-slider-wrapper">
+                  <div class="control_prev"><span></span></div>
+                  <div class="control_next"><span></span></div>
+                  <div class="simple-slider-overflow-hidden">
+                    <ul class="simple-slider">
+                      <li class="simple-slider-element 1">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/1-4/noticia(1).jpg"
+                          alt='Oferta deportiva del Departamento de Educación Física y Deporte 2022' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 2">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/1-4/noticia(4).jpg"
+                          alt='Oferta deportiva del Departamento de Educación Física y Deporte 2022' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 3">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/1-4/noticia(3).jpg"
+                          alt='Oferta deportiva del Departamento de Educación Física y Deporte 2022' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 4">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/1-4/noticia(2).jpg"
+                          alt='Oferta deportiva del Departamento de Educación Física y Deporte 2022' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 5">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/1-4/noticia(5).jpg"
+                          alt='Oferta deportiva del Departamento de Educación Física y Deporte 2022' loading="lazy" />
+                      </li>
+
+                  
+                    
+                    </ul>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+              <p>
+                La Secretaria de Asuntos Estudiantiles y Bienestar Universitario a través del Departamento de Educación Física y Deporte estuvo realizando la oferta deportiva 2022 en el hall del Mauricio López. Donde se llevó a cabo la jornada del curso Cine y Filosofía (1) ciclo 2022 CIENCIA, GÉNERO, FICCIÓN Y CRÍTICA: INQUIETUDES FILOSÓFICAS de la carrera Psicomotricidad a cargo de la Doc. Liliana J. Guzmán Muñoz. <br><br>
+
+                En la misma estuvo presente el Secretario de SAEBU Lic. Raul Rafael Paez y personal del departamento de deporte.
+              </p>
+            </div>
+          </div>
+    
+          <!--complete-->
+
+      <div>
+        <div class="card">
+       
+
+          <h5>15 de Marzo del 2022</h5>
+          <div class="fakeimg-h"><img id="imgs" loading='lazy' src="static/images/noticias/deporte/2022/15-3/noticia(1).jpg"
+              alt="departamento de deporte"></div>
+     
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>📢Inscripciones abiertas <br><br>
+
+            🏃‍♀️🏃 1° carrera aniversario de la Universidad Nacional de San Luis “UNSL CORRE”</h2>
+
+          <h5>9 de Marzo del 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/deporte/2022/9-3/noticia(1).jpg"
+              alt="1° carrera aniversario de la Universidad Nacional de San Luis “UNSL CORRE”"></div>
+          <p>
+            ✅ Será el 8 de mayo a partir de las 10:00 horas desde Rectorado de la UNSL (Ejército de los Andes 950) <br><br>
+
+            👉🏽👉🏽 Las inscripciones ya se pueden realizar en la web oficial del evento: <b><a href="https://www.eventbrite.com.ar/e/unsl-corre-tickets-96791382631" target="_blank">www.eventbrite.com.ar</a></b><br><br>
+            
+            👉🏽👉🏽 Los que compraron la entrada anteriormente, se les respetará la compra y ya se encuentran oficialmente inscriptos. No deben hacer pagos extras, solo presentar el comprobante de pago en la entrega de kits. <br><br>
+            
+        <b>    INSCRIBITE ¡NO TE LA PIERDAS! </b>
+          </p>
+        </div>
+      </div>
+
+          <!--inicio-->
+
+          <div>
+            <div class="card">
+              <h2>Arrancamos con el Deporte en la UNSL</h2>
+              <h3>
+              16 de Febrero del 2022
+              </h3>
+              <div class="fakeimg-h">
+                <div class="simple-slider-wrapper">
+                  <div class="control_prev"><span></span></div>
+                  <div class="control_next"><span></span></div>
+                  <div class="simple-slider-overflow-hidden">
+                    <ul class="simple-slider">
+                      <li class="simple-slider-element 1">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/16-2/noticia(1).jpg"
+                          alt='Deporte en la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 2">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/16-2/noticia(2).jpg"
+                          alt='Deporte en la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 3">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/16-2/noticia(3).jpg"
+                          alt='Deporte en la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 4">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/16-2/noticia(4).jpg"
+                          alt='Deporte en la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 5">
+                        <image class="slide-image" src="static/images/noticias/deporte/2022/16-2/noticia(5).jpg"
+                          alt='Deporte en la UNSL' loading="lazy" />
+                      </li>
+                 
+                  
+                    
+                    </ul>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+    
+            </div>
+          </div>
+    
+          <!--complete-->
+
+      
+          <!--inicio-->
+
+          <div>
+            <div class="card">
+              <h3>
+              7 de Diciembre del 2021
+              </h3>
+              <div class="fakeimg-h">
+                <div class="simple-slider-wrapper">
+                  <div class="control_prev"><span></span></div>
+                  <div class="control_next"><span></span></div>
+                  <div class="simple-slider-overflow-hidden">
+                    <ul class="simple-slider">
+                      <li class="simple-slider-element 1">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(1).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 2">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(2).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 3">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(3).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 4">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(4).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 5">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(5).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 6">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(6).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 7">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(7).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 8">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(8).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 9">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(9).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 10">
+                        <image class="slide-image" src="static/images/noticias/deporte/7-12/noticia(10).jpg"
+                          alt='32°Gala de Gimnasia Artística en el Polideportivo de la UNSL' loading="lazy" />
+                      </li>
+                  
+                    
+                    </ul>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+              <p>
+               
+                Ayer por la tarde se llevo a cabo la 32°Gala de Gimnasia Artística en el Polideportivo de la UNSL, conto con la presencia del Secretario de la SAEBU Lic. Raul Rafael Paez, el director de contable y administración de la SAEBU CPN Luis Heredia, coordinadores de deporte Jorge Aman y Omar Fernández. <br><br>
+
+                "La gala de gimnasia artística data del año 1989 ayer fue la numero 32 , cabe destacar que el año pasado se realizó en forma virtual. <br>
+                Se cuenta con una población de mas de 100 chicos/as que nos representan a nivel Provincial y Nacional con resultados que nos enorgullecen a la institución, padres y profesores. <br>
+                Los profesores que conforman el plantel docente son:  <br>
+                • Prof. Julia Mora. <br>
+                • Prof. Juan Merino. <br>
+                • Prof. Juan Garis. <br>
+                • Prof. Estefanía Siracusa. <br>
+                • Prof. Ignacio Britos. <br>
+                • Prof. Fernando Anzulovich. <br>
+                • Prof. Laura Benítez. <br><br>
+                
+                Desde la secretaria Felicitamos el excelente trabajo llevado a cabo por los profes de gimnasia Artística del club Universitario, al equipo del departamento de Educación Física y deportes y al personal no docente que colaboraron en la realización de la gala.
+              </p>
+            </div>
+          </div>
+    
+          <!--complete-->
+
+          <!--inicio-->
+
+          <div>
+            <div class="card">
+              <h3>
+              29 de Noviembre del 2021
+              </h3>
+              <div class="fakeimg-h">
+                <div class="simple-slider-wrapper">
+                  <div class="control_prev"><span></span></div>
+                  <div class="control_next"><span></span></div>
+                  <div class="simple-slider-overflow-hidden">
+                    <ul class="simple-slider">
+                      <li class="simple-slider-element 1">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(1).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 2">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(2).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 3">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(3).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 4">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(4).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 5">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(5).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 6">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(6).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 7">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(7).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 8">
+                        <image class="slide-image" src="static/images/noticias/deporte/29-11/noticia(8).jpg"
+                          alt='dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes' loading="lazy" />
+                      </li>
+                  
+                    
+                    </ul>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+              <p>
+               
+                En el día de ayer, el secretario de SAEBU, Lic. Raul Rafael Paez fue invitado por el dpto. de educación física y deporte y el club Universitario con sede en Villa Mercedes a participar en la disputa por el 3° y 4° puesto y la final de hockey sobre césped. La misma se desarrolló en el complejo del lago de la Ciudad de Villa Mercedes. <br><br>
+
+Participaron en la entrega de premios el sub secretario de la SubSAEBU, Mg. Jorge Sosa, el coordinador de deporte de Villa mercedes, Prof. Cesar Contreras y el profe de hocky Lic. Martin Ojeda, en la misma se encontraba la secretaria de deporte de Villa Mercedes.
+
+              </p>
+            </div>
+          </div>
+    
+          <!--complete-->
+
+           <!--inicio-->
+
+           <div>
+            <div class="card">
+              <h3>
+                <h2>Final de la LIGA INTERNA UNIVERSITARIA DE FÚTBOL 11 de la UNSL en la cancha ubicada en el Estadio Ave Fénix.</h2> 20 de
+                Noviembre del 2021
+              </h3>
+              <div class="fakeimg-h">
+                <div class="simple-slider-wrapper">
+                  <div class="control_prev"><span></span></div>
+                  <div class="control_next"><span></span></div>
+                  <div class="simple-slider-overflow-hidden">
+                    <ul class="simple-slider">
+                      <li class="simple-slider-element 1">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(6).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 2">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(7).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 3">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(8).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 4">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(9).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 5">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(10).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 6">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(11).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 7">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(12).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 8">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(13).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 9">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(14).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 10">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(15).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                      <li class="simple-slider-element 11">
+                        <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(16).jpg"
+                          alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                      </li>
+                  
+                    
+                    </ul>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+              <p>
+                Damos por finalizado el último partido de la Liga Interna Universitaria de futbol 11, en el que se disputaron el 1° y 2° puesto, quedándose con la victoria por penales Wacho Copado (1°puesto) 4 a 3, Saussure (2°puesto) <br><br>
+
+                Felicitaciones a los que hicieron posible el desarrollo de la Liga, profesores del Departamento de educación física y deporte, trabajadores Nodocente, personal de la salud, árbitros y al área de administración de la Secretaría de Asuntos Estudiantiles y bienestar Universitario. <br>
+                Un agradecimiento al Programa Deportes de la Provincia de San Luis (<b><a href="https://www.instagram.com/deportes.sanluis/" target="_blank">@deportes.sanluis</a></b>) por facilitar las instalaciones del Ave Fénix, donde se desarrollaron las finales. <br><br>
+                
+                Compartimos algunas imágenes de los festejos y la entrega de premios en la que estuvo presente el secretario de la SAEBU Lic. Raul Rafael Paez.
+              </p>
+            </div>
+          </div>
+    
+          <!--complete-->
+  
+
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h3>
+              <h2>Se está llevando a cabo la LIGA INTERNA UNIVERSITARIA DE FÚTBOL 11 de la UNSL en la cancha ubicada en el Estadio Ave Fénix.</h2> 20 de
+              Noviembre del 2021
+            </h3>
+            <div class="fakeimg-h">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(1).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(2).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(3).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 4">
+                      <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(4).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 5">
+                      <image class="slide-image" src="static/images/noticias/deporte/20-11/noticia(5).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                
+                  
+                  </ul>
+                </div>
+              </div>
+  
+  
+  
+            </div>
+            <p>
+              Acaba de terminar el primer partido de la liga donde se disputó el 3° y 4° puesto, 
+              quedándose con la victoria a Vin Up (3°puesto) por 2 a 0 contra Nodo (4°puesto)
+              El secretario de la SAEBU Lic. Raul Rafael Paez se hizo presente en la entrega de premios.
+            </p>
+          </div>
+        </div>
+  
+        <!--complete-->
+
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h3>
+              <h2>Acto inauguración del Centro de Desarrollo Deportivo «Pedro Presti»</h2> 9 de
+              Noviembre del 2021
+            </h3>
+            <div class="fakeimg-h">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/deporte/10-11/noticia(1).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/deporte/10-11/noticia(2).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/deporte/10-11/noticia(3).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                    <li class="simple-slider-element 4">
+                      <image class="slide-image" src="static/images/noticias/deporte/10-11/noticia(4).jpg"
+                        alt='Acto inauguración del Centro de Desarrollo Deportivo' loading="lazy" />
+                    </li>
+                
+                  
+                  </ul>
+                </div>
+              </div>
+  
+  
+  
+            </div>
+            <p>
+              La Universidad Nacional de San Luis (UNSL) organiza e invita al acto de inauguración del Centro de Desarrollo Deportivo Pedro Presti. Será el miércoles 10 de noviembre a las 18:00 horas.  <br><br>
+
+              El Centro se encuentra ubicado en el Barrio Rawson, en las calles 25 de Mayo y Neuquén. La obra que se inaugurará se realizó por etapas y comprendió la construcción de un polideportivo cubierto de 1.056 metros cuadrados en el que se practicará: básquet, handball, futsal y voley. <br><br>
+              
+              También comprende una pista sintética de atletismo de ocho (8) andariveles con fosa de agua, dos (2) correderas de salto en alto, dos (2) correderas de salto en largo, zona de salto en alto, zona de lanzamiento de jabalina, martillo y bala; una (1) sala para la práctica del deporte de combate y una (1) cancha de básquet 3×3.
+              
+              La inversión para su realización proviene de acuerdos entre la Universidad y el Gobierno provincial iniciados en agosto del 2020. Luego de un (1) año de trabajo la UNSL inaugurará este espacio de trascendental importancia deportiva. <br><br>
+              
+              «Este Centro Deportivo es una obra histórica que será un polo importante para el desarrollo deportivo de los/as deportistas de la Universidad Nacional de San Luis y el Club Universitario. El objetivo es seguir creciendo social y deportivamente como Institución y como Club Universitario, sin ninguna duda esta obra nos permitirá hacerlo», expresó el Prof. Jorge Aman, coordinador del Departamento de Educación Física y Deportes de la UNSL.
+            </p>
+          </div>
+        </div>
+  
+        <!--complete-->
+
+       <!--inicio-->
+
+       <div>
+        <div class="card">
+          <h3>
+            <h2>Se instalaron 10 Nuevos reflectores led bajo consumo Homologados en el polideportivo de la UNSL</h2> 9 de
+            Noviembre del 2021
+          </h3>
+          <div class="fakeimg-h">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(1).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(2).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 3">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(3).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 4">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(4).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 5">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(5).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 6">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(6).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 7">
+                    <image class="slide-image" src="static/images/noticias/deporte/9-11/noticia(7).jpg"
+                      alt='noticias 10 nuevos reflectores led' loading="lazy" />
+                  </li>
+               
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+            El Departamento de Educación Física y deportes perteneciente a la Secretaría de Asuntos Estudiantiles y Bienestar universitario de la UNSL, Instalo 10 nuevos reflectores led bajo consumo homologados para el uso de las prácticas deportivas como luz artificial. <br><br>
+
+            Esta obra está destinada a potenciar el uso del polideportivo para las actividades deportivas que se desarrollan como así también las activades culturales que ofrece la UNSL. <br><br>
+            
+            Desde la SAEBU agradecemos al Sr. Secretario de Hacienda, Administración e Infraestructura de la Universidad Nacional de San Luis (UNSL) y al personal Nodocente que integra la misma, por la predisposición y la pertinencia para poder efectivizar la compra de los reflectores.
+            ¡Muchas gracias!
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h3>
+            <h2>El Club Universitario participará de
+              la liga de Futbol sanluiseña
+              con una categoría señior</h2> 5 de
+            Octubre del 2021
+          </h3>
+          <div class="fakeimg-h">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/6-10/noticia(3).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/6-10/noticia(2).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+            Hoy por la mañana se firmó un acta acuerdo entre el Presidente del Club Universitario Lic. Raul Rafael Paez
+            y el delegado Señor Diego Banffi para el ingreso del club Universitario de una categoría + 35 años del
+            futbol señior, que participara en la Liga sanluiseña de fútbol representando el club. <br><br>
+
+            En la misma participaron el profesor de la categoría, Walch Claudio, el secretario del Club Universitario
+            Prof. Omar Fernández, coordinador del Club Universitario San luis Prof. Jorge Aman y de administración del
+            Club Universitario Jorge Veron.
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h3>
+            <h2>📢Torneo cuadrangular UNSL</h2> 26 de
+            Septiembre del 2021
+          </h3>
+          <div class="fakeimg-h">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/26-9/noticia(1).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/26-9/noticia(2).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/26-9/noticia(3).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+            📢Torneo cuadrangular UNSL <br>
+            Hoy a la mañana se llevo a cabo el Torneo cuadrangular UNSL en el polideportivo de la Universidad Nacional
+            de San Luis. Los equipos que participaron en este cuadrangular fueron GEPU, GUAY CURU, ASEBA, UNSL.
+            Fue una hermosa jornada a puro básquet, que contó con la presencia de familias que disfrutaron el día.
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h3>
+            <h2>Primera asamblea del Club Deportivo Universitario</h2> 16 de
+            Septiembre del 2021
+          </h3>
+          <div class="fakeimg-h">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(6).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(7).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(8).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(9).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(10).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(1).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(2).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(3).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(4).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/deporte/17-9/noticia(5).jpg"
+                      alt='noticia deporte' loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+            Ayer por la tarde se llevó a cabo la asamblea ordinaria anual del Club Deportivo Universitario <br>
+            La misma se desarrollo en el comedor universitario de la UNSL donde se presento el nuevo sistema contable,
+            libreta de salud, Carnet del club Universitario que contara con un QR siendo este digital o en papel y se
+            comento todo lo realizado en el trascurso de este primer año. <br>
+            <b> La asamblea contando con la presencia de la comisión directiva:</b> <br><br>
+
+            ▪Presidente: Lic. Raul Rafael Paez <br>
+            ▪Secretario: Prof. Fernández Omar <br>
+            ▪Tesorera: Prof. Vélez Nora <br>
+            Revisor de cuenta: Prof. Páez Eduardo <br>
+            ▪1° Vocal: Prof. Moran Julia <br>
+            ▪2° Vocal: Prof. Lacerda Luciana <br>
+            ▪3° Vocal: Prof. Quiroga Fabián <br>
+            ▪Coordinador Deportivo: Prof. Aman Jorge del centro de San Luis <br>
+            ▪Coordinador Deportivo: Prof. Contreras Cesar del centro de Villa mercedes <br><br>
+
+            <b> Invitados/ socios Honorarios: </b><br>
+            ▪El Sr Rector de la Universidad Nacional de San Luis CPN Moriñigo Victor <br>
+            ▪El Sr Vice-Rector de la Universidad Nacional de San Luis Mg. Flores Héctor <br>
+            ▪El Sr Director Contable de SAEBU CPN. Heredia Luis <br>
+            ▪El Sr. Sub secretario de la Sub SAEBU Mg Sosa Jorge <br>
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+      <div>
+        <div class="card">
+          <h2>Primera asamblea del Club Deportivo Universitario</h2>
+          <h5>2 de Septiembre del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/deporte/noticia(1).jpg" alt="noticia deporte">
+          </div>
+          <p>A un 1 año de la creación del Club Universitario, la junta directiva convoca a su primera asamblea, la
+            misma será este 15 de septiembre del corriente año en las instalaciones del polideportivo de la UNSL, se
+            espera la participación de 50 personas, cumpliendo con los protocolos vigentes hasta la fecha. <br><br>
+
+            El Club en uso de sus atribuciones legales de su creación, convoca a asamblea ordinaria anual. Se tratará un
+            orden del día que comprende, entre otras cosas, programas y presupuesto. <br>
+            La convocatoria está dirigida a toda la comisión directiva del Club, a sus socios honorarios, profesores y
+            entrenadores. <br>
+            En agosto del 2020 este espacio se creó con el propósito de fomentar y desarrollar en sus socios deportistas
+            y socios generales, el deporte formativo, recreativo, inclusivo y competitivo promoviendo valores e
+            integración entre sus miembros. <br>
+            Orden del día <br>
+            • Lectura y aprobación del acta de la asamblea. <br>
+            • Informe del periodo 2020/2021. <br>
+            • Informe de cuentas y estados financieros. <br>
+            • Informe del Revisor Fiscal y aprobación o no del estado de cuentas y balances financieros por parte de la
+            asamblea. <br>
+            • Programas y presupuestos. <br>
+            • Proposiciones y varios.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2></h2>
+          <h5>6 de Agosto del 2021</h5>
+          <div class="fakeimg-0"><img id="imgs" src="static/images/noticias/deporte/deporte.jpg" alt="camisas, deporte">
+          </div>
+          <p>Ya se encuentran disponible los dos modelos de remeras del club Universitario. <br>
+            Punto de venta: Fundación de la Universidad Nacional de San Luis, Ejército de los Andes 950 - Pta. Baja.
+            <br><br>
+
+            <b> Contactos:</b> <br>
+            <b> Email: </b>
+            <a href="mailto:fundacion@unsl.edu.ar">
+              fundacion@unsl.edu.ar <br>
+            </a>
+            <a href="mailto:unsl.fundacion@gmail.com">
+              unsl.fundacion@gmail.com <br>
+            </a>
+
+            <b> Teléfono: </b> <br>
+            <a href="tel:2664520320"> +54 (266) 4520320</a> <br>
+            <b> Internos:</b> 5334 5335 5336 558
+
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!--
+<div>Item 7</div>
+<div>Item 8</div>
+<div>Item 9</div>
+<div>Item 10</div>
+<div>Item 11</div>
+<div>Item 12</div>
+      <div>Item 6</div>
+<div>Item 7</div>
+<div>Item 8</div>
+<div>Item 9</div>
+<div>Item 10</div>
+<div>Item 11</div>
+<div>Item 12</div>
+-->
+
+    </div>
+
+    <div class="pager">
+      <a href="#noticias">
+        <div class="firstPage">&laquo;</div>
+        <div class="previousPage">&lsaquo;</div>
+        <div class="pageNumbers"></div>
+        <div class="nextPage">&rsaquo;</div>
+        <div class="lastPage">&raquo;</div>
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <style>
+    .simple-slider-wrapper {
+      width: 100%;
+      height: auto;
+      max-width: 1000px;
+      margin: 0 auto 30px auto;
+      position: relative;
+    }
+
+    .control_prev,
+    .control_next {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99999;
+      width: 48px;
+      height: 48px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 38px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .control_prev {
+      width: 30px;
+      height: 30px;
+      left: 0;
+    }
+
+    .control_next {
+      width: 30px;
+      height: 30px;
+      right: 0;
+    }
+
+    .control_prev span:before,
+    .control_next span:before {
+      width: 30px;
+      height: 30px;
+      content: "";
+
+      position: absolute;
+    }
+
+    .control_prev span:before {
+      background: url('http://saebu.unsl.edu.ar/static/izq.svg') no-repeat;
+      top: 0;
+      right: 0;
+    }
+
+    .control_next span:before {
+      background: url('http://saebu.unsl.edu.ar/static/der.svg') no-repeat;
+      top: 0;
+      left: 0;
+    }
+
+    .simple-slider-overflow-hidden {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      /*	padding: 0 30px; */
+    }
+
+    .simple-slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .simple-slider-element {
+      width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-image {
+      object-fit: contain;
+      height: 150%;
+      width: auto
+    }
+
+    body {
+      background: #f1f1f1;
+    }
+
+    .row {
+      position: relative;
+      padding: 0 15px 15px 15px;
+
+      max-width: 1560px;
+
+    }
+
+    .leftcolumn1 {
+      float: left;
+      width: 75%;
+    }
+
+    .rightcolumn {
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1350px;
+
+
+    }
+
+    .fakeimg1 {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+
+    }
+
+    .fakeimg {
+
+      height: auto;
+
+
+    }
+
+    .fakeimg img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+      max-width: 700px;
+
+
+    }
+
+    .fakeimg-h img {
+      position: relative;
+      border-radius: 15px;
+      width: 100%;
+
+
+    }
+
+    .fakeimg-0 img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+
+    }
+
+    #imgs {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card h2 {
+      padding-top: 13px;
+    }
+
+    .card {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+    }
+
+    .items {
+      padding: 15px;
+      max-width: 1300px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+    }
+
+    .card1 {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0 15px 0 15px;
+
+      }
+
+      .control_prev span:before,
+      .control_next span:before {
+        width: 15px;
+        height: 15px;
+
+      }
+    }
+  </style>
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      $('.simple-slider-wrapper').each(function () {
+        const this_slider = $(this);
+
+        const slides = this_slider.find('ul li');
+        const control_prev = this_slider.find('.control_prev');
+        const control_next = this_slider.find('.control_next');
+
+        function slider_init() {
+          if (slides.length > 1) {
+            control_prev.css('display', 'block');
+            control_next.css("display", "block");
+          }
+        }
+        slider_init();
+
+        function moveRight() {
+          // move last child to beginning of list and set list position to -100%
+          this_slider.find('ul li:last-child').prependTo(this_slider.find('ul'));
+          slides.css('left', '-100%');
+          // move all list elements to right
+          slides.stop().animate({ left: 0 }, 500);
+        };
+
+        function moveLeft() {
+          // move all list elements to left
+          const arr = [slides.stop().animate({ left: '-100%' }, 500).promise()]
+          // after animation end move first child to end of list and set list position to 0
+          $.when.apply($, arr).then(function () {
+            this_slider.find('ul li:first-child').appendTo(this_slider.find('ul'));
+            slides.css('left', 0);
+          });
+        };
+
+        control_prev.on("click", function () {
+          if (slides.length > 1) {
+            moveRight();
+          }
+        });
+
+        control_next.on("click", function () {
+          if (slides.length > 1) {
+            moveLeft();
+          }
+        });
+
+        // autoplay
+        function setAutoplay() {
+          let is_slider_on = true;
+          let autoplay = setInterval(function () {
+            if (slides.length > 1) {
+              moveLeft();
+            }
+          }, 3000);
+
+          this_slider.on('mouseenter', function () {
+            clearInterval(autoplay);
+            is_slider_on = false;
+          });
+
+          this_slider.on('mouseleave', function () {
+            if (!is_slider_on) {
+              autoplay = setInterval(function () {
+                moveLeft();
+              }, 3000);
+              is_slider_on = true;
+            }
+          });
+        }
+        setAutoplay();
+      });
+
+    });
+
+    $(function () {
+      $(".paginate").paginga({
+
+      });
+
+      $(".paginate-page-2").paginga({
+        page: 2
+      });
+
+      $(".paginate-no-scroll").paginga({
+        scrollToTop: false
+      });
+    });
+  </script>
+
+
+  <style>
+    .pager {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pager div {
+      float: left;
+      border: 1px solid gray;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .pager .pageNumbers a {
+      display: inline-block;
+      padding: 0 10px;
+      color: gray;
+    }
+
+    .pager .pageNumbers .active {
+      color: orange;
+    }
+  </style>
+
+
+  <footer class="footer" id="contacto" style='color:white;'>
+    <div class="footer__addr">
+      <img loading="lazy" class="footer__logo" src="static/saebu.png" height='55' width="247" alt="logo-saebu"
+        style="pointer-events:none;"><br>
+      <img loading="lazy" class="footer__logo-1" src="static/unsl.png" height='65' width="247" alt="logo-unsl"
+        style="pointer-events:none;">
+      <h2>contacto</h2>
+
+      <address>
+        Rivadavia 1029, San Luis<br>
+
+
+      </address>
+      <div>
+        <a href="mailto:saebuunsl@unsl.edu.ar">saebuunsl@unsl.edu.ar</a> <br>
+        <a href="mailto:saebu.unsl.edu@gmail.com">saebu.unsl.edu@gmail.com</a>
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Redes Sociales</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav__item">
+        <h2 class="nav__title">Camping Universitario</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Sitios de Interés</b></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.unsl.edu.ar">UNSL</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.noticias.unsl.edu.ar">Noticias UNSL</a>
+          </li>
+
+
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2021.</p>
+
+      <div class="legal__links">
+        <span>Hecho con<span class="heart"> ♥</span></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="19e7896a5a.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="javastyle.js"></script>
+</body>
+
+</html>

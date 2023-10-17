@@ -1,0 +1,2635 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Dpto Becas</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="saebu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5,maximum-scale=5">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="pagination/paginga.jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="static/saebu-logo.png" />
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function () {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      }
+      else {
+        $('html, body').show();
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="pagination/paginga.jquery.js"></script>
+</head>
+
+<body>
+
+
+  <div class="content3">
+
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <div class="navbar">
+        <a href="http://saebu.unsl.edu.ar"> <img src="static/saebu.png" width="50" height="100" loading="lazy"
+            alt="Saebu Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+
+
+
+
+
+        <ul class="nav no-search">
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU
+              Villa de Merlo</a></li>
+          <li style='margin-right: 30px;' class="nav-item"><a href="http://saebu.unsl.edu.ar">Inicio</a></li>
+          <li style='margin-right: 30px;' class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/ingresantes">Ingresantes 2022</a></li>
+          <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">V Mercedes</a></li>
+          <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/saebu-merlo">V Merlo</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo social</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/becas">Dpto.
+              Becas</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro de Salud Estudiantil</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="#">Comedor Universitario</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-deporte">Deporte</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada">Dpto. Mesa
+              de Entrada</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-compras">Dpto. Compras</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/institucional">Institucional</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/camping-universitario">Camping
+              universitario</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a href="#contacto">contacto</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a href="http://saebu.unsl.edu.ar/noticias">Noticias</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa
+              Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+  <nav class="navbar-display-0" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Departamentos</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/becas" style="font-size: 14px;">Becas</a>
+          </li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-compras" style="font-size: 12px;">Dpto.
+              Compras y
+              Contrataciones</a></li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Comedor Universitario</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-deporte" style="font-size: 11px;">Dpto. Eduación física y
+              deporte</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Gimnasio</a></li>
+              <li class="menu-item"><a href="#">Club universitario</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada"
+              style="font-size: 14px;">Dpto. Mesas de Entrada</a></li>
+
+          <li class="menu-item">
+
+            <a href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo Social</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro
+                  de Salud</a>
+              </li>
+
+              <ul class="sub-menu">
+
+              </ul>
+          </li>
+
+        </ul>
+
+      </li>
+
+
+      <li class="menu-item">
+
+        <a href="http://saebu.unsl.edu.ar/camping-universitario">Camping Universitario</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/historia-del-camping">Historia del
+              Camping</a>
+          </li>
+
+          <ul class="sub-menu">
+
+          </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <div id="parallax-world-of-ugg">
+
+
+    <section>
+      <div class="parallax-six">
+
+        <h2>Departamento de BECAS</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="block">
+
+
+
+        <p><span class="first-character sc">E</span>l Departamento de Becas, perteneciente de la Secretaria de Asuntos
+          Estudiantiles y Bienestar Universitario de la Universidad Nacional de San Luís, actúa en tres Centros
+          Universitarios: </p>
+        <p class="line-break margin-top-10"></p>
+        <p class="margin-top-10">
+        <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0 0 0 60px;">
+          <li> San Luís </li>
+          <li> Villa de Merlo </li>
+          <li> Villa Mercedes</li>
+        </ul>
+        <h3 style="text-align: center;"> <b> contacto:</b> </h3>
+        <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0 0 0 60px;">
+          <li> <b>E-MAIL</b> : <a href="mailto:becasunsl@gmail.com">becasunsl@gmail.com</a> </li>
+          <li> <b>TEL</b>: <a href="tel:02664422818">0266-4422818</a> int.8134 </li>
+        </ul>
+        </p>
+        <p style="text-align: center; font-size: 18px;"><b> Las actividades que se realizan son:</b></p>
+
+        <ul>
+
+          <li> Apertura convocatoria de becas</li>
+          <li> Preseleccionar a los estudiantes que accederán a las becas </li>
+          <li> Control académico de los estudiantes para mantener la beca</li>
+          <li> Autorizaciones de pago</li>
+          <li> Confección de planillas de control</li>
+
+        </ul>
+        <p>
+          <b> Esta es la oferta de becas que tenemos para vos:</b>
+        </p>
+        <ul class="accordion">
+          <li>
+            <a>Beca de ayuda económica</a>
+
+            <p>Esta modalidad de beca consiste en un monto de dinero en efectivo para cubrir en forma parcial gastos
+              inherentes a la actividad estudiantil. </p>
+
+          </li>
+          <li>
+            <a>Beca de Comedor</a>
+            <p>Consiste en una comida diaria en el Comedor Universitario (almuerzo o cena) durante el periodo que dura
+              el beneficio. </p>
+          </li>
+          <li>
+            <a>Beca para Cuidados Infantiles</a>
+            <p>Consiste en un monto de dinero en efectivo, destinada para el cuidado de los menores de 4 años al momento
+              de la inscripción, que sean hijos de estudiantes de la Universidad. </p>
+          </li>
+          <li>
+            <a>Beca de Transporte</a>
+            <p>Se otorgará a estudiantes para facilitar su asistencia al lugar de cursado. Consiste en un monto de
+              dinero en efectivo, destinada a estudiantes que, viviendo en la provincia de San Luis, no residen en el
+              centro de estudios de estudios al cual concurren.
+            </p>
+          </li>
+          <li>
+            <a>Plazas de Residencia</a>
+            <p>Este beneficio tiene por objeto albergar a los estudiantes de la UNSL que, debido a la distancia que los
+              separa de los Centros de estudio deban vivir fuera de sus hogares y carezcan de recursos económicos
+              suficientes. Dichas plazas estarán sujetas a disponibilidad al momento de la adjudicación. </p>
+          </li>
+          <li>
+            <a>Ayuda económica para estudiantes con celiaquía</a>
+            <p>Esta modalidad de beca consiste en un monto de dinero en efectivo destinado a estudiantes con celiaquía.
+            </p>
+          </li>
+
+
+          <li>
+            <a>Ayuda económica para estudiantes con discapacidad</a>
+            <p>Esta modalidad de beca consiste en un monto de dinero en efectivo destinado a estudiantes con
+              discapacidad permanente. </p>
+          </li>
+
+          <li>
+            <a>Becas destinadas al mérito académico (Beca CREER)</a>
+            <p>Destinada a estudiantes de nivel medio de toda la provincia y zonas de influencia ( Sur de Santa Fe,
+              Centro y sur de Cordoba, Centro y sur de Mendoza, San Juan y La Pampa), que tengan un destacado nivel
+              académico en los dos últimos años del secundario (promedio superior a 8), y que se inscriban para cursar
+              una carrera que la universidad defina anualmente como prioritaria en función del área de vacancia o
+              importancia para cada región.
+            </p>
+          </li>
+
+
+        </ul>
+
+
+
+        <p class="line-break margin-top-10"></p>
+        <p><span class="first-character sc">D</span>urante todo el año este Dpto. está abocado al control de bajas y
+          altas de becas las cuales las ultimas se informan al Dpto. Trabajo Social para que los estudiantes sean
+          entrevistados y así poder corroborar los datos colocados en la solicitud, la cual tiene carácter de
+          declaración jurada. </p>
+
+
+
+      </div>
+
+
+
+
+    </section>
+
+
+
+    <p class="line-break margin-top-10">NOTICIAS</p>
+  </div>
+
+
+
+  <script>
+    (function ($) {
+      $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
+
+      $(".accordion a").click(function (j) {
+        var dropDown = $(this).closest("li").find("p");
+
+        $(this).closest(".accordion").find("p").not(dropDown).slideUp();
+
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+        } else {
+          $(this).closest(".accordion").find("a.active").removeClass("active");
+          $(this).addClass("active");
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+      });
+    })(jQuery);
+
+  </script>
+  <style>
+    .simple-slider-wrapper {
+      width: 100%;
+      height: auto;
+      max-width: 1000px;
+      margin: 0 auto 30px auto;
+      position: relative;
+    }
+
+    .control_prev,
+    .control_next {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99999;
+      width: 48px;
+      height: 48px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 38px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .control_prev {
+      width: 30px;
+      height: 30px;
+      left: 0;
+    }
+
+    .control_next {
+      width: 30px;
+      height: 30px;
+      right: 0;
+    }
+
+    .control_prev span:before,
+    .control_next span:before {
+      width: 30px;
+      height: 30px;
+      content: "";
+
+      position: absolute;
+    }
+
+    .control_prev span:before {
+      background: url('http://saebu.unsl.edu.ar/static/izq.svg') no-repeat;
+      top: 0;
+      right: 0;
+    }
+
+    .control_next span:before {
+      background: url('http://saebu.unsl.edu.ar/static/der.svg') no-repeat;
+      top: 0;
+      left: 0;
+    }
+
+    .simple-slider-overflow-hidden {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      /*	padding: 0 30px; */
+    }
+
+    .simple-slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .simple-slider-element {
+      width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-image {
+      object-fit: contain;
+      height: 150%;
+      width: auto
+    }
+
+    body {
+      background: #f1f1f1;
+    }
+
+    .row {
+      position: relative;
+      padding: 0 15px 15px 15px;
+
+      max-width: 1560px;
+
+    }
+
+    .leftcolumn1 {
+      float: left;
+      width: 75%;
+    }
+
+    .rightcolumn {
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1350px;
+
+
+    }
+
+    .fakeimg1 {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+
+    }
+
+    .fakeimg {
+
+      height: auto;
+
+
+    }
+
+    .fakeimg img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+      max-width: 700px;
+
+
+    }
+
+    .fakeimg-x {
+
+      height: auto;
+
+
+    }
+
+    .fakeimg-x img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+
+
+    }
+
+    #imgs {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card h2 {
+      padding-top: 13px;
+    }
+
+    .card {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+    }
+
+    .items {
+      padding: 15px;
+      max-width: 1300px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+    }
+
+    .card1 {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0 15px 0 15px;
+
+      }
+
+      .control_prev span:before,
+      .control_next span:before {
+        width: 15px;
+        height: 15px;
+
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .card li {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+  <div class="paginate-no-scroll 5" id="noticias">
+    <div class="items" style="padding-left:15px;">
+
+
+      <div>
+        <div class="card">
+          <h2>Control académico correspondiente al mes de julio</h2>
+          <h5>28 de Junio del 2023</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2023/28-6/noticia(1).jpg" loading='lazy'
+              alt="Control académico correspondiente al mes de julio"></div>
+
+          <p>
+            Se solicita a los/as Estudiantes que tienen de Becas de Comedor, Ayuda Económica, Cuidados Infantiles,
+            Transporte Interurbano, Discapacidad y Celiaquía, acercarse por el depto. De Becas de la SAEBU, ubicado en
+            el 1er piso del Comedor Universitario, trayendo el comprobante de Historial académico generado por el SIU
+            GUARANÍ. <br>
+            A través de este control podremos tomar cuenta de las materias que han sido regularizadas en el 1er
+            cuatrimestre. Para ello podrán pasar de lunes a viernes de 08:00 a 13:00 hs, y tendrán tiempo hasta el dia
+            07/09/23. <br>
+            En el caso de no cumplir con lo solicitado, se procederá a la baja de la beca correspondiente.
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card">
+          <h2>Listado de Estudiantes preseleccionados a las BECAS DE CONTRAPRESTACION de Servicios 2023.</h2>
+          <h5>22 de Junio del 2023</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2023/22-6/noticia(1).jpg" loading='lazy'
+              alt="preseleccionados a las BECAS DE CONTRAPRESTACION"></div>
+
+          <p>
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario Informa: ya está disponible el listado de
+            Estudiantes preseleccionados a las BECAS CONTRAPRESTACION de Servicios 2023, los mismo deberán acercarse a
+            las oficinas de Trabajo Social, ubicadas en el 1° piso del Comedor Universitario (Rivadavia 1029) desde el
+            dia lunes 26/06 hasta el viernes 30/06 del corriente, en el horario de 08:00 a 13:00 hs para realizar la
+            entrevista correspondiente.
+
+
+
+
+          <ul>
+            <li> <a href="static/pdf/BECAS/2023/22-6/preseleccionados contraprestacion .pdf"><b>Preseleccionados
+                  contraprestacion</b></a>
+            </li>
+          </ul>
+          <ul>
+            <li> <a
+                href="static/pdf/BECAS/2023/22-6/Requisitos  No ingresantes .( Contraprestación de Servicios).pdf"><b>Requisitos
+                  No ingresantes</b></a>
+            </li>
+          </ul>
+
+
+
+          ▫️Por dudas y consultas escribinos a: <a href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com</b></a>
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <div>
+        <div class="card">
+
+          <h5>10 de Abril del 2023</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2023/10-4/noticia(1).jpg" loading='lazy'
+              alt="Estudiantes seleccionados a las becas que ofrece la UNSL"></div>
+
+          <p>
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa que aquellos estudiantes
+            preseleccionados para las becas INTEGRAL, ya sean RENOVANTE o NO INGRESANTE, que aparezcan en el listado,
+            deben acercarse al Departamento de Trabajo Social (primer piso del comedor universitario) hasta el día
+            martes 11 de abril de 2023 para realizar la entrevista correspondiente. El horario de atención es de 8:00 a
+            13:00 hs.
+
+
+
+
+          <ul>
+            <li> <a href="static/pdf/BECAS/2023/10-4/INTEGRAL RENOVANTE 2023.pdf"><b>Preseleccionados
+                  Integral renovante</b></a>
+            </li>
+          </ul>
+          <ul>
+            <li> <a href="static/pdf/BECAS/2023/10-4/INTEGRAL NOINGRESANTE 2023.pdf"><b>Preseleccionados
+                  Integral no ingresante</b></a>
+            </li>
+          </ul>
+
+
+
+          ▫️Por dudas y consultas escribinos a: <a href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com</b></a>
+          </p>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="card">
+
+          <h5>4 de Abril del 2023</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2023/4-4/noticia(1).jpg" loading='lazy'
+              alt="Estudiantes seleccionados a las becas que ofrece la UNSL"></div>
+
+          <p>
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa: <br>
+            Se comunica a los y las estudiantes preseleccionados/as para el beneficio de Residencia universitaria que
+            figuran en el listado, acudir al Depto de Trabajo Social para la entrevista correspondiente. <br>
+            Tendrán tiempo para hacerlo hasta el día 11 de abril. <br>
+
+
+
+
+          <ul>
+            <li> <a
+                href="static/pdf/BECAS/2023/4-4/preselección Residencia Universitario Actualizado 2023.pdf"><b>Preseleccionados
+                  Residencia Universitaria</b></a>
+            </li>
+          </ul>
+          <ul>
+            <li> <a href="static/pdf/BECAS/2023/4-4/Requisitos  Ingresantes , No ingresantes.-.pdf"><b>Requisitos
+                  Ingresantes , No ingresantes</b></a>
+            </li>
+          </ul>
+
+
+
+          ▫️Por dudas y consultas escribinos a: <a href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com</b></a>
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card">
+          <h2>📢Estudiantes seleccionados a las becas que ofrece la UNSL. </h2>
+          <h5>3 de Abril del 2023</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2023/3-4/noticia(1).jpg" loading='lazy'
+              alt="Estudiantes seleccionados a las becas que ofrece la UNSL"></div>
+
+          <p>
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa: <br>
+            Todos aquellos estudiantes que aparecen en los siguientes listados, deberán presentarse en el depto. de
+            Trabajo Social, ubicado en el primer piso del comedor universitario (Rivadavia 1029) para la entrevista
+            correspondiente. <br><br>
+
+            👉Tendrán tiempo para hacerlo hasta el día 11 de abril. <br><br>
+
+
+
+
+
+          <ul>
+            <li> <a href="static/pdf/BECAS/2023/3-4/Ayuda Economica Ingresantes.pdf"><b>▪AYUDA ECONÓMICA
+                  INGRESANTES</b></a>
+            </li>
+            <li> <a href="static/pdf/BECAS/2023/3-4/Ayuda Economica No Ingresante.pdf"><b>▪AYUDA ECONOMICA NO INGRESANTE
+                </b></a>
+            </li>
+            <li> <a href="static/pdf/BECAS/2023/3-4/Comedor Ingresante.pdf"><b>▪COMEDOR INGRESANTE</b></a>
+            </li>
+            <li> <a href="static/pdf/BECAS/2023/3-4/Comedor No Ingresante.pdf"><b>▪COMEDOR NO INGRESANTE </b></a>
+            </li>
+          </ul>
+
+          ▫️Por dudas y consultas escribinos a: <a href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com</b></a>
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div>
+        <div class="card">
+          <h2>INGRESANTES CREER 2023 <br>
+            SAN LUIS - VILLA MERCEDES- MERLO</h2>
+          <h5>27 de Marzo del 2023</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/2023/27-3/noticia(1).jpg" loading='lazy'
+              alt="INGRESANTES CREER 2023"></div>
+
+          <p>
+
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa: ya se encuentra disponible el
+            listado de INGRESANTES a la beca CREER 2023. <br>
+            Aquellos estudiantes que se encuentren en el listado deberán presentar la siguiente documentación: <br>
+            * Fotocopia del DNI <br>
+            * Certificado de inscripción a la carrera <br>
+            * Certificado de analítico en trámite (secundario) <br><br>
+
+            Deberán presentar la documentación solicitada en el departamento de becas ubicado en el primer piso del
+            comedor Universitario, Rivadavia 1029 de lunes a viernes en el horario de 8:00 a 13:30hs <br><br>
+
+            ▫️Por dudas y consultas escribinos a: <a href="mailto:becasunsl@gmail.com"><b> becasunsl@gmail.com</b></a>
+            <br><br>
+          <ul>
+            <li> <a href="static/pdf/BECAS/Becas/Ingresantes 2023.pdf"><b> Ingresantes 2023</b></a>
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card">
+          <h2>RENOVANTES BECA CREER</h2>
+          <h5> 21 de Marzo 2023</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/2023/21-3/noticia(1).jpg"
+              alt="RENOVANTES BECA CREER 2023"></div>
+          <p>
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa: ya se encuentra disponible el
+            listado de estudiantes renovante a la BECA CREER
+            Por dudas y consultas escribinos a: <a href="mailto:becasunsl@gmail.com"> <b>becasunsl@gmail.com</b></a>
+            <br>
+            👉El departamento de Becas se encuentra en el primer piso del comedor Universitario, Rivadavia 1029.
+          <ul style="text-align: justify;">
+            <li><a href="static/pdf/BECAS/2023/RENOVANTES CREER 2023.pdf" target="_blank"><b> RENOVANTES CREER
+                  2023</b></a></li>
+
+          </ul>
+
+
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card">
+          <h2>Listados de estudiantes preseleccionados a las distintas becas que ofrece la UNSL 2023</h2>
+          <h5> 14 de Marzo 2023</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/2023/14-3/noticia(1).jpg"
+              alt="preseleccionados 2023"></div>
+          <p>
+          <ul style="text-align: justify;">
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/AYUDA ECONOMICA INGRESANTES.pdf"
+                target="_blank">Preseleccionados de AYUDA ECONÓMICA INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/AYUDA ECONOMICA NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de AYUDA ECONÓMICA NO INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/AYUDA ECONOMICA RENOVANTES.pdf"
+                target="_blank">Preseleccionados de AYUDA ECONÓMICA RENOVANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/CELIAQUIA AYUDA ECONOMICA INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CELIAQUIA AYUDA ECONOMICA INGRESANTES </a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/CELIAQUIA AYUDA ECONOMICA NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CELIAQUIA AYUDA ECONOMICA NO INGRESANTES </a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/CELIAQUIA COMEDOR INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CELIAQUIA COMEDOR INGRESANTES </a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/CELIAQUIA COMEDOR NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CELIAQUIA COMEDOR NO INGRESANTES </a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/COMEDOR INGRESANTES.pdf"
+                target="_blank">Preseleccionados de COMEDOR INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/COMEDOR NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de COMEDOR NO INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/COMEDOR RENOVANTE.pdf"
+                target="_blank">Preseleccionados de COMEDOR RENOVANTE</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/CUIDADOS INFANTILES INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CUIDADOS INFANTILES INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/CUIDADOS INFANTILES NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CUIDADOS INFANTILES NO INGRESANTES</a></li>
+
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/DISCAPACIDAD AYUDA ECONOMICA ING.pdf"
+                target="_blank">Preseleccionados de DISCAPACIDAD AYUDA ECONOMICA INGRESANTES</a></li>
+
+
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/DISCAPACIDAD AYUDA ECONOMICA NO ING.pdf"
+                target="_blank">Preseleccionados de DISCAPACIDAD AYUDA ECONOMICA NO INGRESANTES</a></li>
+
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/DISCAPACIDAD COMEDOR INGRESANTES.pdf"
+                target="_blank">Preseleccionados de DISCAPACIDAD COMEDOR INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/DISCAPACIDAD COMEDOR NO ING.pdf"
+                target="_blank">Preseleccionados de DISCAPACIDAD COMEDOR NO INGRESANTES</a></li>
+
+
+
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/TRANSPORTE INTERURBANO INGRESANTE.pdf"
+                target="_blank">Preseleccionados de TRANSPORTE INTERURBANO INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2023-SAN LUIS/preseleccionados/TRANSPORTE INTERURBANO NO INGRESANTE.pdf"
+                target="_blank">Preseleccionados de TRANSPORTE INTERURBANO NO INGRESANTES</a></li>
+
+
+
+          </ul>
+
+          </p>
+        </div>
+      </div>
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h2>📢 CONVOCATORIA BECAS UNSL 2023</h2>
+          <h3> <a style='color:grey;' href="/becas">BECAS</a>, 8 de Febrero del 2023</h3>
+          <div class="fakeimg">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/2023/9-2/noticia(4).jpg" loading='lazy'
+                      alt='CONVOCATORIA BECAS UNSL 2023' />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/2023/9-2/noticia(3).jpg" loading='lazy'
+                      alt='CONVOCATORIA BECAS UNSL 2023' />
+                  </li>
+                  <li class="simple-slider-element 3">
+                    <image class="slide-image" src="static/images/noticias/2023/9-2/noticia(2).jpg" loading='lazy'
+                      alt='CONVOCATORIA BECAS UNSL 2023' />
+                  </li>
+                  <li class="simple-slider-element 4">
+                    <image class="slide-image" src="static/images/noticias/2023/9-2/noticia(1).jpg" loading='lazy'
+                      alt='CONVOCATORIA BECAS UNSL 2023' />
+                  </li>
+
+
+
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa: desde el día 28 de Diciembre del
+            corriente año hasta el día 19 de Febrero de 2023 estará abierta la inscripción para acceder a las Becas que
+            otorga la UNSL (Comedor, Ayuda Económica, Transporte Interurbano, Celiaquía, Discapacidad, Plazas de
+            Residencia, Cuidados Infantiles), tanto para Estudiantes Ingresantes, No Ingresantes y Renovantes. <br><br>
+
+            ✔Para realizar la Inscripción a las Becas, deberán hacerlo en el siguiente link: <a
+              href="https://becas.unsl.edu.ar" target="_blank"><b> becas.unsl.edu.ar</b></a> (Sistema
+            de Becas de la U.N.S.L.)
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h2>La Secretaria de Asuntos Estudiantiles y Bienestar Universitario Informa: En febrero comienza la
+            convocatoria 2023 para las Becas Estratégicas Manuel Belgrano.</h2>
+          <h3> <a style='color:grey;' href="/becas">BECAS</a>, 8 de Febrero del 2022</h3>
+          <div class="fakeimg">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/2023/8-2/noticia(1).jpg" loading='lazy'
+                      alt='convocatoria 2023 para las Becas Estratégicas Manuel Belgrano' />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/2023/8-2/noticia(5).jpg" loading='lazy'
+                      alt='convocatoria 2023 para las Becas Estratégicas Manuel Belgrano' />
+                  </li>
+                  <li class="simple-slider-element 3">
+                    <image class="slide-image" src="static/images/noticias/2023/8-2/noticia(4).jpg" loading='lazy'
+                      alt='convocatoria 2023 para las Becas Estratégicas Manuel Belgrano' />
+                  </li>
+                  <li class="simple-slider-element 4">
+                    <image class="slide-image" src="static/images/noticias/2023/8-2/noticia(3).jpg" loading='lazy'
+                      alt='convocatoria 2023 para las Becas Estratégicas Manuel Belgrano' />
+                  </li>
+                  <li class="simple-slider-element 5">
+                    <image class="slide-image" src="static/images/noticias/2023/8-2/noticia(2).jpg" loading='lazy'
+                      alt='convocatoria 2023 para las Becas Estratégicas Manuel Belgrano' />
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+            📅A partir del 1 y hasta el 22 de febrero podrán inscribirse las y los renovantes y desde el 22 de febrero
+            hasta el 31 de marzo será el turno de las y los aspirantes. <br><br>
+
+            👉Requisitos académicos: <br><br>
+
+            Renovantes: <br>
+            ✔ Si ingresaste en 2022, debés tener el 50 % de materias aprobadas del año. <br>
+            ✔Si sos estudiante avanzada o avanzado, debés tener el 66 % de materias aprobadas del año 2022. <br>
+            ✔Todas las materias deben ser aprobadas (por promoción/final) durante 2022. <br>
+            ✔ Cumplir con el requisito de 5 h semanales académicas o de investigación. <br><br>
+
+            👉Aspirantes a la beca: <br>
+            ✔ Si te anotaste a la carrera en 2023, se certificará la condición de alumno regular con tu universidad.
+            <br>
+            ✔Si ingresaste a la carrera en 2022, debés haber aprobado el 50 % de las materias del año. <br>
+            ✔ En caso de ser estudiante en estadío avanzado, debés haber aprobado el 66 % de las materias de 2022. <br>
+            ✔ Todas las materias deben ser aprobadas (por promoción/final) durante 2022. <br><br>
+
+            ▪Este Programa tiene como objetivo promover el ingreso, la continuidad y la graduación de estudiantes en
+            disciplinas centrales para el desarrollo económico y social e impulsar la vinculación estratégica entre la
+            universidad y el sistema tecnológico-productivo nacional y el mercado laboral.
+            <br><br>
+            💻Inscribite ingresando a: <a href="https://www.argentina.gob.ar/educacion/becas/becas-manuel-belgrano"
+              target="_blank"><b>argentina.gob.ar</b></a>
+
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+
+      <div>
+        <div class="card">
+
+          <h5> 15 de Septiembre del 2022</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/2022/15-9/noticia(1).jpg" loading='lazy'
+              alt="acreditación de las becas de contraprestación"></div>
+
+          <p>
+
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa, hoy miércoles 14 de septiembre,
+            comenzó la acreditación de las becas de contraprestación, correspondiente a los meses de Julio y Agosto.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h2>Estudiantes preseleccionados a las BECAS CONTRAPRESTACION de Servicios 2022</h2>
+          <h5>8 de Julio 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/2022/8-7/noticia(1).jpg"
+              alt="BECAS DE CONTRAPRESTACIÓN 2022"></div>
+          <p>
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario Informa: <br>
+            Ya se encuentra la lista de
+            Estudiantes preseleccionados a las BECAS CONTRAPRESTACION de Servicios 2022, los mismos deberán acercarse a
+            las oficinas de Trabajo Social ubicadas en el primer piso del comedor universitario (Rivadavia 1029) al
+            regreso del receso invernal (a partir del 25 de julio) y coordinar las respectivas entrevistas. <br><br>
+            <a href="static/pdf/BECAS/Becas-Contraprestacion.pdf" target="_blank"><b> Preseleccionados BECA
+                CONTRAPRESTACIÓN</b></a>
+          </p>
+        </div>
+      </div>
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h2>📢BECAS DE CONTRAPRESTACION 2022</h2>
+          <h3> <a style='color:grey;' href="#">BECAS</a>, 21 de Junio del 2022</h3>
+          <div class="fakeimg">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/becas/2022/21-6/noticia(1).jpg"
+                      loading='lazy' alt='BECAS DE CONTRAPRESTACION 2022' />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/becas/2022/21-6/noticia(2).jpg"
+                      loading='lazy' alt='BECAS DE CONTRAPRESTACION 2022' />
+                  </li>
+                  <li class="simple-slider-element 3">
+                    <image class="slide-image" src="static/images/noticias/becas/2022/21-6/noticia(3).jpg"
+                      loading='lazy' alt='BECAS DE CONTRAPRESTACION 2022' />
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+
+            Las BECAS DE CONTRAPRESTACION constan de dos pasos a seguir: <br>
+            1.- Los estudiantes deberán inscribirse en el sistema tradicional de becas, debiendo registrarse en la misma
+            plataforma, si nunca lo han hecho. Luego completar el formulario on-line ingresar a: <br>
+            <a href="http://becas.unsl.edu.ar" target="_blank"> <b> becas.unsl.edu.ar </b></a> <br>
+            • Registrarse <br>
+            • Ingresar nuevamente con la clave creada <br>
+            • Completar el formulario <br>
+            Con estos pasos queda finalizada la inscripción del estudiante <br><br>
+
+            2.- Los Docentes o responsables, deberán completar el formulario con los datos de los estudiantes que
+            postulen para la conformación del proyecto, como así también, todo lo concerniente al mismo y lo solicitado
+            en el formulario. <br>
+            • El formulario lo encontraras en nuestra página web saebu.unsl.edu.ar o en nuestra biografía <br><br>
+
+            📲Consultas al whatsapp de Becas <br>
+            <a href="tel:2664927534"><b> 2664 92-7534 </b> </a> <br><br>
+
+
+
+
+            <a href="http://saebu.unsl.edu.ar/static/pdf/BECAS/resolucion-contraprestacion.pdf" target="_blank"> <b>
+                RESOLUCION BECA CONTRAPRESTACIÓN </b></a><br>
+            <a href="http://saebu.unsl.edu.ar/static/pdf/BECAS/ANEXO-BECAS-DE-CONTRAPRESTACION.docx" target="_blank">
+              <b> FORMULARIO </b></a>
+
+
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+      <div>
+        <div class="card" id="beca-contraprestacion">
+
+          <h5>7 de Julio 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/2022/7-6/noticia(1).jpg"
+              alt="BECAS DE CONTRAPRESTACIÓN"></div>
+          <p>
+
+
+            La Universidad Nacional de San Luis a través de la Secretaría de Asuntos Estudiantes y Bienestar
+            Universitario les comunica que se encuentra abierta la convocatoria a inscripción al programa Especial de
+            BECAS DE CONTRAPRESTACIÓN <br>
+            El beneficio llegará a estudiantes, que no sean ingresantes, que realicen tareas de apoyo y que formen parte
+            de un proyecto. Las postulaciones se realizan del 7 de junio al 27 de junio. <br><br>
+
+            Mencionada Beca contiene cuatro ejes principales a solicitud del Sr Rector C.P.N Víctor Moriñigo a la
+            Secretaría de Asuntos Estudiantiles y Bienestar Universitario (SAEBU). <br><br>
+
+            Se consideró que era necesaria la implementación de la beca para la prosecución de los estudios
+            universitarios para quienes carezcan de los recursos económicos necesarios para afrontar la actividad
+            estudiantil, demuestren un nivel satisfactorio de rendimiento académico y den cumplimiento a las
+            disposiciones particulares de esa ordenanza. <br><br>
+            Ejes Temáticos: <br>
+            • EJE DE COMUNICACIÓN INSTITUCIONAL: Las redes y las comunicaciones son de vital importancia en la no
+            presencialidad, visto que es la cara visible de la
+            Universidad para toda la comunidad, poniendo en valor esta área en distintas Secretarías. <br>
+            • EJE DE HISTORIA Y MEMORIA: La Universidad camina firme hacia sus 50 años de historia, por lo cual estamos
+            en vísperas de la creación de comisiones que entiendan en la organización de ese histórico evento. <br>
+            • EJE REPOSITORIO DIGITAL/BIBLIOTECA: Proyecto iniciado por la Secretaría Académica, donde el concepto de
+            bibliotecas ha mutado a una digitalización total. <br>
+            • EJE ADMINISTRACIÓN: Estudiantes de los últimos años de carreras, a fin de que pueden realizar sus
+            prácticas y ganar experiencias en ciertos proyectos específicos de la administración de la UNSL, acotados en
+            el tiempo y por lo cual serán las convocatorias. <br>
+            • Otros que se consideren áreas de vacancias. <br><br>
+
+            Aquellos responsables de proyecto deberán enviar por email el “Formulario de presentación de solicitudes de
+            Becas por Contraprestación en Áreas Estratégicas para la UNSL”
+
+            <br><br>
+            <a href="static/pdf/BECAS/resolucion-contraprestacion.pdf" target="_blank"><b> RESOLUCION BECA
+                CONTRAPRESTACIÓN</b></a>
+          </p>
+        </div>
+      </div>
+
+      <!--inicio-->
+
+      <div>
+        <div class="card">
+          <h2> 📢Segunda convocatoria a becas, destinadas al Centro Universitario de Merlo, para estudiantes ingresante
+            y no ingresante.</h2>
+          <h3> <a style='color:grey;' href="#">BECAS</a>, 11 de Mayo del 2022</h3>
+          <div class="fakeimg">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/becas/2022/11-5/noticia(1).jpg"
+                      loading='lazy'
+                      alt='convocatoria a becas, destinadas al Centro Universitario de Merlo, para estudiantes ingresante y no ingresante' />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/becas/2022/11-5/noticia(1).jpg"
+                      loading='lazy'
+                      alt='convocatoria a becas, destinadas al Centro Universitario de Merlo, para estudiantes ingresante y no ingresanteconvocatoria a becas, destinadas al Centro Universitario de Merlo, para estudiantes ingresante y no ingresante' />
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+
+
+            👉Las becas a solicitar son: <br>
+            ✔Ayuda Económica ✔Cuidados Infantiles ✔Transporte Interurbano <br><br>
+
+            📆Los postulantes tendrán tiempo para inscribirse desde el 10 de mayo al 22 de mayo del 2022. <br><br>
+
+            Para Inscribirte ingresa a: <a href="http://becas.unsl.edu.ar" target="_blank"><b> becas.unsl.edu.ar
+              </b></a> <br><br>
+
+            <b> ⚠Exclusivamente centro Universitario Merlo⚠ </b>
+
+
+
+
+          </p>
+        </div>
+      </div>
+
+      <!--complete-->
+
+      <div>
+        <div class="card">
+          <h2>📌Listado de Estudiantes ingresantes y Renovantes a la BECA CREER.</h2>
+          <h5>30 de Abril 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/2022/4-5/noticia(1).jpg"
+              alt="Listado de Estudiantes ingresantes y Renovantes a la BECA CREER"></div>
+          <p>
+
+
+
+
+            👉🏼Documentación a presentar para ingresantes de BECA CREER. <br><br>
+
+            ▪️Copia de DNI <br>
+            ▪️Constancia de inscripción a la carrera <br>
+            ▪️Analítico (Secundario) o constancia de analítico <br>
+            en trámite. <br><br>
+
+            👉🏼Podrán enviar la documentación solicitada a: <a
+              href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com</b></a> o de manera presencial al Dpto. de becas,
+            que se encuentra en Rivadavia 1029, 1°piso (comedor universitario) de 8:00hs a 13:00hs <br><br>
+
+
+            👉🏼Fecha de entrega de documentación para Ingresantes 2022, hasta el 10 de mayo. <br><br>
+          <p><b> Listado de Estudiantes ingresantes y Renovantes a la BECA CREER de San Luis 2022</b></p>
+          <ul style="text-align: justify;">
+            <li><a href="static/pdf/BECAS/Becas/CREER-RENOVANTES-San-Luis.pdf" target="_blank"><b> BECAS CREER
+                  RENOVANTES
+                </b></a></li>
+            <li><a href="static/pdf/BECAS/Becas/INGRESANTES-2022-San Luis.pdf" target="_blank"><b>BECAS CREER
+                  INGRESANTES</b> </a></li>
+
+          </ul>
+
+
+          <p><b> Listado de Estudiantes ingresantes y Renovantes a la BECA CREER de Villa Mercedes 2022 </b></p>
+          <ul>
+            <li><a href="static/pdf/BECAS/Becas/VILLAMERCEDES2022RENOVANTE.pdf" target="_blank"><b> BECAS CREER
+                  RENOVANTES</b></a></li>
+            <li><a href="static/pdf/BECAS/Becas/BECA-CREER-INGRESANTES-2022-mercedes.pdf" target="_blank"><b> BECAS
+                  CREER
+                  INGRESANTES</b> </a></li>
+          </ul>
+
+
+
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa que, desde el 28 de abril hasta
+            el
+            27 de mayo, se mantendrá abierta la convocatoria a las becas “Más Conectados” que brinda la UNSL a
+            estudiantes.</h2>
+          <h5> 19 de Abril del 2022</h5>
+
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2022/19-4/noticia(1).jpg"
+              loading='Secretaría de Asuntos Estudiantiles y Bienestar Universitario' alt="beca pago"></div>
+
+          <p>
+            Para postularse, los y las estudiantes deberán cumplir una serie de requisitos: <br>
+            ▪Ser estudiante regular de alguna carrera que se dicte en la UNSL. También se incluyen aquellos estudiantes
+            ingresantes que hayan comenzado sus estudios superiores en el año 2022 y que estén cursando una carrera de
+            grado o tecnicatura. <br>
+            ▪No contar con conectividad a internet a través de WIFI en el domicilio <br>
+            Los procedimientos de evaluación y de adjudicación de la Beca, estarán a cargo del Departamento de Becas y
+            de
+            Trabajo Social de la SAEBU. <br>
+            Para postularse lo deberán hacer a través de: <a href="http://becas.unsl.edu.ar" target="_blank"><b>
+                becas.unsl.edu.ar </b></a>
+
+          </p>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="card">
+          <h2>Ya están disponibles los listado de las/os ESTUDIANTES PRESELECCIONADAS/OS a las becas que ofrece la
+            UNSL</h2>
+          <h5> 30 de Marzo 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/2022/30-3/noticia(1).jpg"
+              alt="preseleccionados 2022"></div>
+          <p>
+
+
+
+
+
+
+          <p><b> PRESELECCION 2022 San Luis </b></p>
+          <ul style="text-align: justify;">
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/AYUDA ECONÓMICA INGRESANTES.pdf"
+                target="_blank">Preseleccionados de AYUDA ECONÓMICA INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/AYUDA ECONÓMICA NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de AYUDA ECONÓMICA NO INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/AYUDA ECONÓMICA RENOVANTES.pdf"
+                target="_blank">Preseleccionados de AYUDA ECONÓMICA RENOVANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/CELIAQUIA.pdf"
+                target="_blank">Preseleccionados de CELIAQUÍA</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/COMEDOR INGRESANTES.pdf"
+                target="_blank">Preseleccionados de COMEDOR INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/COMEDOR NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de COMEDOR NO INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/COMEDOR RENOVANTES.pdf"
+                target="_blank">Preseleccionados de COMEDOR RENOVANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/CUIDADOS INFANTILES INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CUIDADOS INFANTILES INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/CUIDADOS INFANTILES NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de CUIDADOS INFANTILES NO INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/DISCAPACIDAD INGRESANTES.pdf"
+                target="_blank">Preseleccionados de DISCAPACIDAD INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/DISCAPACIDAD NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de DISCAPACIDAD NO INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/TRANSPORTE INTERURBANO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de TRANSPORTE INTERURBANO INGRESANTES</a></li>
+            <li><a
+                href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/TRANSPORTE INTERURBANO NO INGRESANTES.pdf"
+                target="_blank">Preseleccionados de TRANSPORTE INTERURBANO NO INGRESANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/INTEGRAL-RENOVANTES.pdf"
+                target="_blank">Preseleccionados de INTEGRAL RENOVANTES</a></li>
+            <li><a href="static/pdf/BECAS/PRESELECCION 2022-SAN LUIS/preseleccionados/INTEGRAL-NO-INGRESANTES.pdf"
+                target="_blank">Preseleccionados de INTEGRAL NO INGRESANTES</a></li>
+
+
+          </ul>
+          <p><b>PRESELECCION 2022 de Villa de Merlo</b> </p>
+          <ul>
+            <li><a href="static/pdf/BECAS/PRESELECCION-MERLO-2022.pdf" target="_blank">Click aquí</a></li>
+          </ul>
+
+
+          <p><b> PRESELECCION 2022 de Villa Mercedes </b></p>
+          <ul>
+            <li><a href="static/pdf/BECAS/PRESELECCION-2022-VM.pdf" target="_blank">Click aquí</a></li>
+          </ul>
+
+
+
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Atención Estudiantes Renovantes e Ingresantes (2021)</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 14 de Marzo del 2022</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/14-3/noticia(1).jpg"
+                        loading='lazy' alt='Dpto. de Becas' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/14-3/noticia(2).jpg"
+                        loading='lazy' alt='Dpto. de Becas' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+
+              Se les solicita acercar a las oficinas del Dpto. de Becas el CERTIFICADO ANALÍTICO (el cual lo pueden
+              solicitar en sección alumnos de la facultad
+              correspondiente) o enviarlo por mail a: <br>
+              <b><a href="mailto:becasunsl@gmail.com">becasunsl@gmail.com</a></b>
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+
+      <div>
+        <div class="card">
+          <h2>📢 SE EXTIENDE LA CONVOCATORIA DE BECAS UNSL 2022</h2>
+          <h5> 28 de Febrero del 2022</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/2022/28-2/noticia(1).jpg" loading='lazy'
+              alt="becas"></div>
+
+          <p>
+
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario Comunica que se extiende hasta el día 06 de
+            Marzo del 2022 la inscripción para acceder a las Becas que otorga la UNSL (Comedor, Ayuda Económica,
+            Transporte Interurbano, Celiaquía, Discapacidad, Plazas de Residencia, Cuidados Infantiles), tanto para
+            Estudiantes Ingresantes, No Ingresantes y Renovantes. <br><br>
+
+            ✔Para realizar la Inscripción a las Becas, deberán hacerlo en el siguiente link: <a
+              href="http://becas.unsl.edu.ar" target="_blank"><b> becas.unsl.edu.ar </b></a>(Sistema de Becas de la
+            U.N.S.L.)
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Becas Estratégicas Manuel Belgrano: Convocatoria 2022</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 23 de Febrero del 2022</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/23-2/noticia(1).jpg"
+                        loading='lazy' alt='Becas Estratégicas Manuel Belgrano: Convocatoria 2022' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/23-2/noticia(5).jpg"
+                        loading='lazy' alt='Becas Estratégicas Manuel Belgrano: Convocatoria 2022' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/23-2/noticia(4).jpg"
+                        loading='lazy' alt='Becas Estratégicas Manuel Belgrano: Convocatoria 2022' />
+                    </li>
+                    <li class="simple-slider-element 4">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/23-2/noticia(3).jpg"
+                        loading='lazy' alt='Becas Estratégicas Manuel Belgrano: Convocatoria 2022' />
+                    </li>
+                    <li class="simple-slider-element 5">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/23-2/noticia(2).jpg"
+                        loading='lazy' alt='Becas Estratégicas Manuel Belgrano: Convocatoria 2022' />
+                    </li>
+
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+
+              La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa: se abre la inscripción a las
+              becas para carreras relacionadas con alimentos, ambiente, computación e informática, energía, gas,
+              minería, movilidad y transporte, petróleo y ciencias básicas. <br><br>
+
+              Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de estudiantes en
+              estas disciplinas centrales para el desarrollo económico y social de nuestro país. <br><br>
+
+              Inscripción: Desde el 21 de febrero y hasta el 30 de marzo de 2022. <br><br>
+
+              Más información en <b><a target="_blank"
+                  href="https://argentina.gob.ar/educacion">argentina.gob.ar/educacion</b> </a> o en <b><a
+                  target="_blank" href="https://www.instagram.com/educacion.ar/"> @educacion.ar </a></b>
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Ayuda económica para estudiantes
+              con celiaquía</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 19 de Febrero del 2022</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/19-2/noticia(1).jpg"
+                        loading='lazy' alt='Ayuda económica para estudiantes
+                       con celiaquía' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/19-2/noticia(2).jpg"
+                        loading='lazy' alt='Ayuda económica para estudiantes
+                       con celiaquía' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+              Esta modalidad de beca consiste en un monto de dinero en efectivo destinado a estudiantes con celiaquía.
+              <br><br>
+
+              📌Para realizar la Inscripción a las Becas, deberán hacerlo a través de:<a href="http://becas.unsl.edu.ar"
+                target="_blank"><b> becas.unsl.edu.ar </b></a>(Sistema de Becas de la U.N.S.L.) <br><br>
+
+              ⚠Inscripciones abiertas hasta el <br>
+              27 de febrero 2022⚠ <br><br>
+
+              ✔También podes realizar tu consulta vía mail a: <a href="mailto:becasunsl@gmail.com"><b>
+                  becasunsl@gmail.com </b></a>
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢BECA DE TRANSPORTE</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 18 de Febrero del 2022</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/18-2/noticia(1).jpg"
+                        loading='lazy' alt='Beca Deporte' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/18-2/noticia(2).jpg"
+                        loading='lazy' alt='Beca Deporte' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+
+              Se otorgará a estudiantes para facilitar su asistencia al lugar de cursado. Consiste en un monto de dinero
+              en efectivo, destinada a estudiantes que, viviendo en la provincia de San Luis, no residen en el centro de
+              estudios de estudios al cual concurren. <br><br>
+
+              📌Para realizar la Inscripción a las Becas, deberán hacerlo a través de:<a href="http://becas.unsl.edu.ar"
+                target="_blank"><b> becas.unsl.edu.ar </b></a>(Sistema de Becas de la U.N.S.L.) <br><br>
+
+              ⚠Inscripciones abiertas hasta el <br>
+              27 de febrero 2022⚠ <br><br>
+
+              ✔También podes realizar tu consulta vía mail a: <a href="mailto:becasunsl@gmail.com"><b>
+                  becasunsl@gmail.com </b></a>
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Beca Comedor</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 11 de Febrero del 2022</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/11-2/noticia(1).jpg"
+                        loading='lazy' alt='Beca Comedor' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/11-2/noticia(2).jpg"
+                        loading='lazy' alt='Beca Comedor' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+              Consiste en una comida diaria en el Comedor Universitario durante el periodo que dura el beneficio.
+              <br><br>
+
+              📌Para realizar la Inscripción a las Becas, deberán hacerlo a través de:<a href="http://becas.unsl.edu.ar"
+                target="_blank"><b> becas.unsl.edu.ar </b></a>(Sistema de Becas de la U.N.S.L.) <br><br>
+
+              ⚠Inscripciones abiertas hasta el <br>
+              27 de febrero 2022⚠ <br><br>
+
+              ✔También podes realizar tu consulta vía mail a: <a href="mailto:becasunsl@gmail.com"><b>
+                  becasunsl@gmail.com </b></a>
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Beca Ayuda Económica</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 9 de Febrero del 2022</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/9-2/noticia(1).jpg"
+                        loading='lazy' alt='Beca Ayuda Económica' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/9-2/noticia(2).jpg"
+                        loading='lazy' alt='Beca Ayuda Económica' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+              Esta modalidad de beca consiste en un monto de dinero en efectivo para cubrir en forma parcial gastos
+              inherentes a la actividad estudiantil. <br><br>
+
+              📌Para realizar la Inscripción a las Becas, deberán hacerlo a través de:<a href="http://becas.unsl.edu.ar"
+                target="_blank"><b> becas.unsl.edu.ar </b></a>(Sistema de Becas de la U.N.S.L.) <br><br>
+
+              ⚠Inscripciones abiertas hasta el <br>
+              27 de febrero 2022⚠ <br><br>
+
+              ✔También podes realizar tu consulta vía mail a: <a href="mailto:becasunsl@gmail.com"><b>
+                  becasunsl@gmail.com </b></a>
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Ayuda económica para estudiantes con discapacidad.</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 8 de Febrero del 2022</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/8-2/noticia(1).jpg"
+                        loading='lazy' alt='Ayuda económica para estudiantes con discapacidad' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/8-2/noticia(2).jpg"
+                        loading='lazy' alt='Ayuda económica para estudiantes con discapacidad' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+
+
+              👉🏻Esta modalidad de beca consiste en un monto de dinero en efectivo destinado a estudiantes con
+              discapacidad permanente. <br><br>
+
+              📌Para realizar la Inscripción a las Becas, deberán hacerlo a través de: <b><a
+                  href="http://becas.unsl.edu.ar" target="_blank"> becas.unsl.edu.ar </a></b> (Sistema de Becas de la
+              U.N.S.L.) <br><br>
+
+              ⚠Inscripciones abiertas hasta el <br>
+              27 de febrero 2022 ⚠ <br><br>
+
+              ✔También podes realizar tu consulta vía mail a: <a
+                href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com
+                </b> </a>
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>¿Tenes alguna duda sobre las becas que ofrece la Universidad Nacional de San Luis, o sobre la
+              inscripciones de las mismas?</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 7 de Febrero del 2022</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/7-2/noticia(1).jpg"
+                        loading='lazy' alt='BECAS UNSL 2022' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/7-2/noticia(2).jpg"
+                        loading='lazy' alt='BECAS UNSL 2022' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+
+              Si es así, podés acercarte al departamento de becas donde te asesoramos. 1° piso del comedor universitario
+              (Rivadavia 1029), de lunes a viernes de 8:00hs a 13:00hs o por la tarde, en el 2° piso aula 11 de 16:00hs
+              19:00hs <br><br>
+
+              También podes realizar tu consulta vía mail a: <a href="mailto:becasunsl@gmail.com"> <b>
+                  becasunsl@gmail.com </b></a>
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢Convocatoria 2022 a las becas estratégicas Manuel Belgrano.</h2>
+            <h3> <a style='color:grey;' href="http://saebu.unsl.edu.ar/becas">BECAS</a>, 4 de Febrero de 2022</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/4-2/noticia(1).jpg"
+                        loading='lazy' alt='Convocatoria 2022 a las becas estratégicas Manuel Belgrano' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/4-2/noticia(6).jpg"
+                        loading='lazy' alt='Convocatoria 2022 a las becas estratégicas Manuel Belgrano' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/4-2/noticia(5).jpg"
+                        loading='lazy' alt='Convocatoria 2022 a las becas estratégicas Manuel Belgrano' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/4-2/noticia(4).jpg"
+                        loading='lazy' alt='Convocatoria 2022 a las becas estratégicas Manuel Belgrano' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/4-2/noticia(3).jpg"
+                        loading='lazy' alt='Convocatoria 2022 a las becas estratégicas Manuel Belgrano' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/2022/4-2/noticia(2).jpg"
+                        loading='lazy' alt='Convocatoria 2022 a las becas estratégicas Manuel Belgrano' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <p>
+
+              La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa: desde el 21 de febrero se abre
+              una nueva convocatoria hasta alcanzar las 36.000 becas y hasta el 21 de febrero podrán renovarse las becas
+              otorgadas en el 2021. <br><br>
+
+              Las becas Manuel Belgrano tienen como principal objetivo proporcionar un incentivo económico en forma de
+              Beca de estudio para que jóvenes provenientes de hogares de bajos ingresos realicen una carrera
+              universitaria o una tecnicatura en una disciplina considerada estratégica para el desarrollo económico y
+              productivo del país. <br>
+              Se consideran estratégicas las disciplinas pertenecientes a las siguientes áreas: Alimentos, Ambiente,
+              Computación e Informática, Energía, Gas, Minería, Movilidad y Transporte, Petróleo y Ciencias Básicas
+              <br><br>
+
+              Más información en: ⤵⤵ <br> <a target="_blank"
+                href="https://www.argentina.gob.ar/educacion/becas/becas-manuel-belgrano"><b>www.argentina.gob.ar</b></a>
+              <br>
+              <a href="https://www.instagram.com/educacion.ar/?hl=es" target="_blank"><b>@educacion.ar</b></a>
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢 CONVOCATORIA BECAS UNSL 2022</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 28 de Diciembre del 2021</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/28-12/noticia(1).jpg" loading='lazy'
+                        alt='CONVOCATORIA BECAS UNSL 2022' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/28-12/noticia(2).jpg" loading='lazy'
+                        alt='CONVOCATORIA BECAS UNSL 2022' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+              Estudiantes INGRESANTES podrán acceder a las Becas al Mérito Académico (Beca CREER), para la cual el
+              Estudiante debe haber tenido un promedio superior a 8 (ocho) en los últimos 2 años de la secundaria
+              (2020-2021). <br><br>
+
+              ⚠Los estudiantes que postulen tendrán tiempo para inscribirse hasta el 27 de febrero del 2022 ⚠ <br><br>
+
+              ✔Los/as interesados/as podrán realizar la inscripción a las Becas, a través del siguiente link: <br><br>
+
+              👉🏽 <b><a href="https://becas.unsl.edu.ar" target="_blank">becas.unsl.edu.ar</a></b>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>📢 CONVOCATORIA BECAS UNSL 2022</h2>
+            <h3> <a style='color:grey;' href="#">BECAS</a>, 22 de Diciembre del 2021</h3>
+            <div class="fakeimg-x">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/22-12/noticia(1).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/22-12/noticia(2).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/22-12/noticia(3).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/22-12/noticia(4).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+              La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa: desde el día 22 de Diciembre del
+              corriente año hasta el día 27 de Febrero de 2022 estará abierta la inscripción para acceder a las Becas
+              que otorga la UNSL (Comedor, Ayuda Económica, Transporte Interurbano, Celiaquía, Discapacidad, Plazas de
+              Residencia, Cuidados Infantiles), tanto para Estudiantes Ingresantes, No Ingresantes y Renovantes.
+              <br><br>
+
+              ✔Para realizar la Inscripción a las Becas, deberán hacerlo en el siguiente link: <b><a
+                  href="http://becas.unsl.edu.ar" target="_blank">becas.unsl.edu.ar</a></b> (Sistema de Becas de la
+              U.N.S.L.)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <!--inicio-->
+      <div>
+        <div>
+          <div class="card">
+            <h2>Beca Residencia</h2>
+            <h3> <a style='color:grey;' href="#">BECA</a>, 29 de Octubre del 2021</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/29-10/noticia(1).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/29-10/noticia(3).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/29-10/noticia(2).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa a los estudiantes
+              preseleccionados al Beneficio de Residencia Universitaria 2021, que deberán presentarse en el Departamento
+              de Trabajo Social, de 08:00hs a 12:00hs, a partir del día viernes 29 de Octubre 2021, hasta el día viernes
+              19 de noviembre del corriente año. <br><br>
+
+              📍Calle Rivadavia Nº 1029. 1º piso del Comedor Universitario. Departamento de Trabajo Social.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <div class="card">
+
+          <h5> 5 de Octubre del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/6-10/noticia(1).jpg" loading='lazy'
+              alt="beca pago"></div>
+
+          <p>
+            📌La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa que el día jueves, 7 de octubre,
+            van a estar acreditada las becas de: Ayuda Económica, CREER y "Más conectados" correspondiente al mes en
+            curso de San Luis, Villa Mercedes y Merlo. </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>Nueva adjudicación de la Beca Estratégica Manuel Belgrano</h2>
+          <h5> 1 de Octubre del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/1-10/noticia(1).jpg" loading='lazy'
+              alt="beca"></div>
+
+          <p>
+
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa, <br>
+            los/as becarios/as deberán terminar el trámite de aceptación de la beca Manuel Belgrano, a través de la
+            plataforma de la beca. Tendrán tiempo de aceptar la beca hasta el domingo 10/10, inclusive. <br>
+            Para conocer la nómina de quienes fueron adjudicados/as de la Becas Estratégicas Manuel Belgrano de su
+            Universidad pueden descargar el archivo ingresando con su usuario y contraseña al administrador. ( La clave
+            y contraseña es la que les enviamos para recuperar usuarios el día 29 de julio). <br>
+            • Deberán ingresar en el siguiente link: <a target="_blank"
+              href="https://becasmanuelbelgrano.educacion.gob.ar/univ_datos/instituciones.php"><b>becasmanuelbelgrano.educacion.gob.ar</b></a>
+            <br>
+            • Seleccionar su Universidad en donde dice Institución e ingresar su contraseña. <br>
+            • Una vez ingresados en el portal, tendrán a su disposición una pestaña con el listado bajo el nom,bre
+            “Nuevas Becas Adjudicadas” <br>
+
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>PROGRESAR</h2>
+          <h5> 7 de Septiembre del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/7-9/beca(1).jpg" loading='lazy'
+              alt="beca"></div>
+
+          <p>
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa,que se extendió la inscripción a la
+            #BecaProgresar para las líneas educación obligatoria, educación superior y enfermería hasta el 17 de
+            septiembre. <br>
+            Además la inscripción a Progresar Trabajo continúa hasta el 30 de noviembre. <br><br>
+            Más info en <b><a href="https://argentina.gob.ar/progresar" target="_blank">
+                argentina.gob.ar/progresar</a></b> o en la <b><a target="_blank"
+                href="https://play.google.com/store/apps/details?id=ar.com.progresar"> App Progresar+ </a></b>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>Estudiantes preseleccionados a las BECAS ESPECIAL DE
+            CONTRAPRESTACIÓN!</h2>
+          <h5> 1 de Septiembre del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/1-9/noticia(1).jpg" loading='lazy'
+              alt="beca"></div>
+
+          <p>
+            Hasta el viernes 3 de septiembre se recepcionará en el Dpto. de Trabajo Social la documentación solicitada
+            vía email a los estudiantes preseleccionados que figuran en el siguiente link:
+
+
+            <a href="https://drive.google.com/file/d/1JEK_W6MR6iruu_mVt6LKkWn-_g6eW3fE/view?usp=sharing"
+              target="_blank"><b>https://drive.google.com</b></a>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>BECAS DE
+            CONTRAPRESTACIÓN</h2>
+          <h5> 27 de Agosto del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/27-8/beca.jpg" loading='lazy'
+              alt="beca">
+          </div>
+
+          <p>
+            A partir del lunes 30 de agosto y hasta el viernes 3 de septiembre se recepcionará en el Dpto. de Trabajo
+            Social la documentación solicitada vía email a los estudiantes preseleccionados que figuran en el siguiente
+            link:
+
+
+            <a href="https://drive.google.com/file/d/1JEK_W6MR6iruu_mVt6LKkWn-_g6eW3fE/view?usp=sharing"
+              target="_blank"><b>https://drive.google.com</b></a>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>BECAS</h2>
+          <h5> 9 de Agosto del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/9-8/beca.jpg" loading='lazy' alt="beca">
+          </div>
+
+          <p>
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa, a los estudiantes beneficiarios de
+            Becas, que deberán enviar por correo el comprobante de su situación académica (que lo encontraran entrando
+            al siu guarani) a <a href="mailto:becasunsl@gmail.com"><b>becasunsl@gmail.com</b></a> <br>
+            Tendrán tiempo para enviarlo hasta el <b>31 de agosto.</b>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>Pago de Becas</h2>
+          <h5> 3 de Agosto del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/3-8/beca(1).jpg" loading='lazy'
+              alt="beca"></div>
+
+          <p>
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa que el día jueves 5 de agosto, van
+            a estar acreditada las becas de Ayuda Económica, CREER y "Más conectados" correspondiente al mes en curso de
+            San Luis, Villa Mercedes y Merlo.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>Desde el 1º al 31 de agosto, se reabre la inscripción para las becas Progresar</h2>
+            <h3> <a style='color:grey;' href="#">BECA</a>, 27 de Julio del 2021</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/28-7/beca(4).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/28-7/beca(5).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/28-7/beca(2).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/28-7/beca(1).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/28-7/beca(3).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/28-7/beca(6).jpg" loading='lazy'
+                        alt='noticia beca' />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa, desde el 1º al 31 de agosto, se
+              reabre la inscripción para las becas Progresar para: Educación Obligatoria, Educación Superior y
+              Enfermería. Las/os interesadas/os pueden anotarse ingresando a: <b><a
+                  href="https://argentina.gob.ar/progresar" target="_blank"> argentina.gob.ar/progresar</a></b> o
+              descargando la <a href="https://play.google.com/store/apps/details?id=ar.com.progresar"
+                target="_blank"><b>App Progresar</b></a> desde el PlayStore. <br> <br>
+
+              Para esta nueva inscripción, se realizarán 6 pagos mensuales de agosto a enero. Los montos de cada beca
+              son los siguientes. <br> <br>
+
+              Podrán acceder a las becas Progresar las/os estudiantes que tengan certificado de alumno regular y que la
+              suma de los ingresos percibidos por grupo familiar sea menor a tres salarios mínimos vitales y móviles
+              <br> <br>
+
+              También continúa abierta la inscripción a las becas Progresar Trabajo y tenés tiempo hasta el 30 de
+              noviembre.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+
+      <div>
+        <div class="card">
+          <h2>Becas Manuel Belgrano</h2>
+          <h5> 26 de julio del 2021</h5>
+          <div class="fakeimg"><img id="imgs" src="static/images/noticias/becas/26-7/beca.jpg" loading='lazy'
+              alt="beca">
+          </div>
+
+          <p>
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa, desde el Ministerio de Educación
+            de la Nación se duplico el número de becas a entregar, para el programa de Becas Manuel Belgrano, pasando de
+            12.000 a 24.000 beneficiarios/as. <br>
+            La Beca Manuel Belgrano está destinada a jóvenes de 18 a 30 años para que puedan finalizar sus estudios
+            terciarios y universitarios. <br> <br>
+
+            A partir de este lunes 26 de julio se publicaran los resultados de la convocatoria 2021 en la plataforma web
+            del Programa, sección “Estado de mi solicitud”. <br> <br>
+
+            <b> ¿Qué es lo que tenés que saber? </b> <br>
+            Aquellos estudiantes que tengan la Beca Manuel Belgrano aprobada tendrán tiempo hasta el viernes 30 de julio
+            para dar su consentimiento de aceptación y completar la información bancaria para tramitar el pago. En caso
+            de que los/las beneficiarios/as estén percibiendo la Beca Progresar deberán dar su consentimiento a la baja
+            de ese Programa. Todo esto estará indicado en la plataforma de inscripción y los/las estudiantes podrán
+            verlo claramente en: <b> <a href="https://www.argentina.gob.ar/educacion/becas/becas-manuel-belgrano"
+                target="_blank"> argentina.gob.ar</a></b>
+
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+        <!--inicio-->
+
+        <div>
+          <div class="card">
+            <h2>Programa de Becas Estratégicas Manuel Belgrano</h2>
+            <h3> <a style='color:grey;' href="http://saebu.unsl.edu.ar/becas">BECAS</a>, 7 de Julio de 2021</h3>
+            <div class="fakeimg">
+              <div class="simple-slider-wrapper">
+                <div class="control_prev"><span></span></div>
+                <div class="control_next"><span></span></div>
+                <div class="simple-slider-overflow-hidden">
+                  <ul class="simple-slider">
+                    <li class="simple-slider-element 1">
+                      <image class="slide-image" src="static/images/noticias/becas/7-7/becas-1.jpg" loading='lazy'
+                        alt='becas noticias' />
+                    </li>
+                    <li class="simple-slider-element 2">
+                      <image class="slide-image" src="static/images/noticias/becas/7-7/becas-2.jpg" loading='lazy'
+                        alt='becas noticias' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/7-7/becas-3.jpg" loading='lazy'
+                        alt='becas noticias' />
+                    </li>
+                    <li class="simple-slider-element 3">
+                      <image class="slide-image" src="static/images/noticias/becas/7-7/becas-4.jpg" loading='lazy'
+                        alt='becas noticias' />
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+            <p>
+              <!--texto..-->
+            </p>
+            <p>Te contamos de que trata el Programa de Becas Estratégicas Manuel Belgrano, las áreas alcanzadas, Quiénes
+              pueden aplicar a las Becas Manuel Belgrano, Cuáles son los objetivos de las Becas Manuel Belgrano, Quiénes
+              pueden aplicar a las Becas Manuel Belgrano, Cuáles son los requisitos para postularse a las Becas Manuel
+              Belgrano, Características de las Becas Manuel Belgrano <br>
+              En nuestra pagina web encontraras la Nómina de Carreras Estratégicas junto a la Resolución de la
+              SECRETARIA DE POLÍTICAS UNIVERSITARIAS. <br>
+
+              Resolución de la SECRETARIA DE POLÍTICAS UNIVERSITARIAS: <a target="_blank"
+                href="https://drive.google.com/drive/folders/15VgZd7isQ6VnkXYMRbEw_nFnS-xGbhYT">
+                <b>https://drive.google.com</b></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--complete-->
+      <div>
+        <div class="card">
+          <h2>BECAS DE CONTRAPRESTACIÓN</h2>
+          <h5> Julio 5, 2021</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/becas/5-7/beca.jpeg"
+              alt="beca">
+          </div>
+          <p>La Universidad Nacional de San Luis a través de la Secretaría de Asuntos Estudiantes y Bienestar
+            Universitario les comunica que se encuentra abierta la convocatoria a inscripción al programa Especial de
+            BECAS DE CONTRAPRESTACIÓN <br>
+            El beneficio llegará a estudiantes, que no sean ingresantes y que realicen tareas de apoyo. Las
+            postulaciones se realizan del 26 de junio al 29 de julio. <br>
+
+            Mencionada Beca contiene cuatro ejes principales a solicitud del Sr Rector C.P.N Víctor Moriñigo a la
+            Secretaría de Asuntos Estudiantiles y Bienestar Universitario (SAEBU) y fue aprobada en la última sesión
+            extraordinaria del Consejo Superior. <br>
+
+            Se consideró que era necesaria la implementación de la beca para la prosecución de los estudios
+            universitarios para quienes carezcan de los recursos económicos necesarios para afrontar la actividad
+            estudiantil, demuestren un nivel satisfactorio de rendimiento académico y den cumplimiento a las
+            disposiciones particulares de esa ordenanza. <br>
+            Ejes Temáticos: <br>
+            • <b> EJE DE COMUNICACIÓN INSTITUCIONAL</b>: Las redes y las comunicaciones son de vital importancia en la
+            no presencialidad, visto que es la cara visible de la
+            Universidad para toda la comunidad, poniendo en valor esta área en distintas Secretarías. <br>
+            • <b>EJE DE HISTORIA Y MEMORIA</b>: La Universidad camina firme hacia sus 50 años de historia, por lo cual
+            estamos en vísperas de la creación de comisiones que entiendan en la organización de ese histórico evento.
+            <br>
+            • <b>EJE REPOSITORIO DIGITAL/BIBLIOTECA</b>: Proyecto iniciado por la Secretaría Académica, donde el
+            concepto de bibliotecas ha mutado a una digitalización total. <br>
+            • <b>EJE ADMINISTRACIÓN</b>: Estudiantes de los últimos años de carreras, a fin de que pueden realizar sus
+            prácticas y ganar experiencias en ciertos proyectos específicos de la administración de la UNSL, acotados en
+            el tiempo y por lo cual serán las convocatorias. <br>
+            • Otros que se consideren áreas de vacancias. <br>
+
+
+            Resolución: <a target="_blank"
+              href="https://drive.google.com/drive/folders/1kFCWJPBafmtVYd93B7aatsnuhN4oAs_W?usp=sharing"><b>drive.google.com</b>
+            </a><br>
+
+            Inscribirse por sistema al siguiente link: <a target="_blank"
+              href="https://becas.unsl.edu.ar/becas/"><b>becas.unsl.edu.ar/becas</b></a> <br>
+
+            mail: <a href="mailto:becasunsl@gmail.com"> becasunsl@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <!--
+          <div>Item 6</div>
+          <div>Item 7</div>
+          <div>Item 8</div>
+          <div>Item 9</div>
+          <div>Item 10</div>
+          <div>Item 11</div>
+          <div>Item 12</div>
+  
+      -->
+
+
+    </div>
+    <div class="pager">
+      <a href="#noticias" style="cursor: pointer;">
+        <div class="firstPage">&laquo;</div>
+        <div class="previousPage">&lsaquo;</div>
+        <div class="pageNumbers"></div>
+        <div class="nextPage">&rsaquo;</div>
+        <div class="lastPage">&raquo;</div>
+    </div>
+    </a>
+  </div>
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      $('.simple-slider-wrapper').each(function () {
+        const this_slider = $(this);
+
+        const slides = this_slider.find('ul li');
+        const control_prev = this_slider.find('.control_prev');
+        const control_next = this_slider.find('.control_next');
+
+        function slider_init() {
+          if (slides.length > 1) {
+            control_prev.css('display', 'block');
+            control_next.css("display", "block");
+          }
+        }
+        slider_init();
+
+        function moveRight() {
+          // move last child to beginning of list and set list position to -100%
+          this_slider.find('ul li:last-child').prependTo(this_slider.find('ul'));
+          slides.css('left', '-100%');
+          // move all list elements to right
+          slides.stop().animate({ left: 0 }, 500);
+        };
+
+        function moveLeft() {
+          // move all list elements to left
+          const arr = [slides.stop().animate({ left: '-100%' }, 500).promise()]
+          // after animation end move first child to end of list and set list position to 0
+          $.when.apply($, arr).then(function () {
+            this_slider.find('ul li:first-child').appendTo(this_slider.find('ul'));
+            slides.css('left', 0);
+          });
+        };
+
+        control_prev.on("click", function () {
+          if (slides.length > 1) {
+            moveRight();
+          }
+        });
+
+        control_next.on("click", function () {
+          if (slides.length > 1) {
+            moveLeft();
+          }
+        });
+
+        // autoplay
+        function setAutoplay() {
+          let is_slider_on = true;
+          let autoplay = setInterval(function () {
+            if (slides.length > 1) {
+              moveLeft();
+            }
+          }, 3000);
+
+          this_slider.on('mouseenter', function () {
+            clearInterval(autoplay);
+            is_slider_on = false;
+          });
+
+          this_slider.on('mouseleave', function () {
+            if (!is_slider_on) {
+              autoplay = setInterval(function () {
+                moveLeft();
+              }, 3000);
+              is_slider_on = true;
+            }
+          });
+        }
+        setAutoplay();
+      });
+
+    });
+
+    $(function () {
+      $(".paginate").paginga({
+
+      });
+
+      $(".paginate-page-2").paginga({
+        page: 2
+      });
+
+      $(".paginate-no-scroll").paginga({
+        scrollToTop: false
+      });
+    });
+  </script>
+
+
+
+
+
+  <style>
+    .pager {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #imgs {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pager div {
+      float: left;
+      border: 1px solid gray;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .pager .pageNumbers a {
+      display: inline-block;
+      padding: 0 10px;
+      color: gray;
+    }
+
+    .pager .pageNumbers .active {
+      color: orange;
+    }
+  </style>
+
+
+  <footer class="footer" id="contacto" style='color:white;'>
+    <div class="footer__addr">
+      <img loading="lazy" class="footer__logo" src="static/saebu.png" height='55' width="247" alt="logo-saebu"
+        style="pointer-events:none;"><br>
+      <img loading="lazy" class="footer__logo-1" src="static/unsl.png" height='65' width="247" alt="logo-unsl"
+        style="pointer-events:none;">
+      <h2>contacto</h2>
+
+      <address>
+        Rivadavia 1029, San Luis<br>
+
+
+      </address>
+      <div>
+        <a href="mailto:saebuunsl@unsl.edu.ar">saebuunsl@unsl.edu.ar</a> <br>
+        <a href="mailto:saebu.unsl.edu@gmail.com">saebu.unsl.edu@gmail.com</a>
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Redes Sociales</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav__item">
+        <h2 class="nav__title">Camping Universitario</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Sitios de Interés</b></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.unsl.edu.ar">UNSL</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.noticias.unsl.edu.ar">Noticias UNSL</a>
+          </li>
+
+
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2021.</p>
+
+      <div class="legal__links">
+        <span>Hecho con<span class="heart"> ♥</span></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="19e7896a5a.js" defer></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="javastyle.js"></script>
+
+</body>
+
+</html>

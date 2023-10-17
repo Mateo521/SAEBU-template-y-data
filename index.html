@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="La Secretaria de Asuntos Estudiantiles y Bienestar Universitario Brinda
+    asistencia y acompañamiento para contribuir a un óptimo desempeño académico donde priman cuatro ejes,
+    alimentación optima , cobertura de Atención Primaria para el cuidado de la salud, contribución a una
+    formación integral del individuo a través de prácticas deportivas no sólo competitivas sino también
+    recreativas; tendencia a la igualdad de oportunidades para el acceso a la educación superior a través del
+    otorgamiento de becas, residencias. Promover el bienestar individual y colectivo de docentes,
+    estudiantes, directivos, personal de apoyo universitario en las áreas socio-económica, Becas, Residencias,
+    salud, recreativo, deportivo, cultural y artístico, área de desarrollo humano como elemento fundamental del
+    proceso de formación integral.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link href="font_awesome.css" rel="stylesheet">
+
+
+  <script src="jquery.min.js"></script>
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function () {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      }
+      else {
+        $('html, body').show();
+      }
+    });
+  </script>
+
+  <!-- 
+  <link rel="stylesheet" href="/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="static/saebu-logo.png" />
+ -->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="static/saebu-logo.png" />
+
+
+
+  <title>SAEBU</title>
+</head>
+
+
+<body>
+
+  <style>
+    .simple-slider-wrapper {
+      width: 100%;
+      max-height: 600px;
+
+      height: auto;
+      position: relative;
+    }
+
+    .control_prev,
+    .control_next {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9;
+      width: 48px;
+      height: 48px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 38px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .control_prev {
+      width: 30px;
+      height: 30px;
+      left: 0;
+    }
+
+    .control_next {
+      width: 30px;
+      height: 30px;
+      right: 0;
+    }
+
+    .control_prev span:before,
+    .control_next span:before {
+      width: 30px;
+      height: 30px;
+      content: "";
+
+      position: absolute;
+    }
+
+    .control_prev span:before {
+      background: url('http://saebu.unsl.edu.ar/static/izq.svg') no-repeat;
+      top: 0;
+      right: 0;
+    }
+
+    .control_next span:before {
+      background: url('http://saebu.unsl.edu.ar/static/der.svg') no-repeat;
+      top: 0;
+      left: 0;
+    }
+
+    .simple-slider-overflow-hidden {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      /*	padding: 0 30px; */
+    }
+
+    .simple-slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+
+    }
+
+    .simple-slider-element {
+      width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-image {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      max-height: 600px;
+      width: 100%;
+    }
+
+    body {
+      background: #f1f1f1;
+    }
+
+    .row {
+      position: relative;
+      padding: 0 15px 15px 15px;
+
+      max-width: 1560px;
+
+    }
+
+    .leftcolumn1 {
+      float: left;
+      width: 75%;
+    }
+
+    .rightcolumn {
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1350px;
+
+
+    }
+
+    .fakeimg1 {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+
+    }
+
+    .fakeimg {
+
+      height: auto;
+
+
+    }
+
+    .fakeimg img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+      max-width: 700px;
+
+
+    }
+
+    .fakeimg-h img {
+      position: relative;
+      border-radius: 15px;
+      width: 100%;
+
+
+    }
+
+    .fakeimg-0 img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+
+    }
+
+    #imgs {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card h2 {
+      padding-top: 13px;
+    }
+
+    .card {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+    }
+
+    .items {
+      padding: 15px;
+      max-width: 1300px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+    }
+
+    .card1 {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0 15px 0 15px;
+
+      }
+
+      .control_prev span:before,
+      .control_next span:before {
+        width: 15px;
+        height: 15px;
+
+      }
+    }
+  </style>
+
+  <div class="content3">
+
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="vimeo-wrapper">
+
+
+    <div class="simple-slider-wrapper">
+      <div class="control_prev"><span></span></div>
+      <div class="control_next"><span></span></div>
+      <div class="simple-slider-overflow-hidden">
+        <ul class="simple-slider">
+          <li class="simple-slider-element 1">
+
+            <div class="top-title">
+
+              <h1 class="titulo1">Temporada de verano 2022-2023 </h1>
+
+              <p class="texto1">Te esperamos estas vacaciones de verano en el Complejo Turístico y Recreativo La
+                Florida...</p> <a class="link-title" href="http://saebu.unsl.edu.ar/camping-universitario">Seguir
+                leyendo</a>
+            </div>
+
+
+            <image class="slide-image" src="static/images/Banner/Banner(4).jpg" alt='SAEBU' loading="lazy" />
+          </li>
+          <li class="simple-slider-element 2">
+
+            <image class="slide-image" src="static/images/Banner/Banner(1).jpg" alt='SAEBU' loading="lazy" />
+          </li>
+          <li class="simple-slider-element 3">
+
+
+            <div class="top-title">
+
+              <h1 class="titulo1">📢 SE EXTIENDE LA CONVOCATORIA DE BECAS UNSL 2022
+              </h1>
+
+              <p class="texto1">La Secretaría de Asuntos Estudiantiles y Bienestar Universitario Comunica que se
+                extiende hasta el día 06 de Marzo del 2022... </p> <a class="link-title"
+                href="http://saebu.unsl.edu.ar/becas#noticias">Seguir leyendo</a>
+            </div>
+
+            <image class="slide-image" src="static/images/noticias/becas/2022/28-2/noticia(1).jpg" alt=''
+              loading="lazy" />
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  </div>
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <div class="navbar">
+        <a href="http://saebu.unsl.edu.ar"> <img src="static/saebu.png" width="50" height="100" loading="lazy"
+            alt="Saebu Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+
+
+
+
+
+        <ul class="nav no-search">
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU
+              Villa de Merlo</a></li>
+          <li style='margin-right: 30px;' class="nav-item"><a href="http://saebu.unsl.edu.ar">Inicio</a></li>
+          <li style='margin-right: 30px;' class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/ingresantes">Ingresantes 2022</a></li>
+          <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">V Mercedes</a></li>
+          <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/saebu-merlo">V Merlo</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo social</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/becas">Dpto.
+              Becas</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro de Salud Estudiantil</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="#">Comedor Universitario</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-deporte">Deporte</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada">Dpto. Mesa
+              de Entrada</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-compras">Dpto. Compras</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/institucional">Institucional</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/camping-universitario">Camping
+              universitario</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a href="#contacto">contacto</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a href="http://saebu.unsl.edu.ar/noticias">Noticias</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa
+              Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+  <nav class="navbar-display-0" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Departamentos</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/becas" style="font-size: 14px;">Becas</a>
+          </li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-compras" style="font-size: 12px;">Dpto.
+              Compras y
+              Contrataciones</a></li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Comedor Universitario</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-deporte" style="font-size: 11px;">Dpto. Eduación física y
+              deporte</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Gimnasio</a></li>
+              <li class="menu-item"><a href="#">Club universitario</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada"
+              style="font-size: 14px;">Dpto. Mesas de Entrada</a></li>
+
+          <li class="menu-item">
+
+            <a href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo Social</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro
+                  de Salud</a>
+              </li>
+
+              <ul class="sub-menu">
+
+              </ul>
+          </li>
+
+        </ul>
+
+      </li>
+
+
+      <li class="menu-item">
+
+        <a href="http://saebu.unsl.edu.ar/camping-universitario">Camping Universitario</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/historia-del-camping">Historia del
+              Camping</a>
+          </li>
+
+          <ul class="sub-menu">
+
+          </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+  <style>
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg:hover {
+      opacity: 0.7;
+    }
+
+
+    .modal {
+      display: none;
+
+      position: fixed;
+
+      z-index: 30;
+
+
+      padding-top: 95px;
+
+
+      left: 0;
+      top: 0;
+      width: 100%;
+
+      height: 100%;
+
+      overflow: auto;
+
+      background-color: rgb(0, 0, 0);
+
+      background-color: rgba(0, 0, 0, 0.9);
+
+    }
+
+
+    .modal-content {
+      margin: auto;
+      display: block;
+
+      max-width: 450px;
+
+      max-height: 800px;
+
+    }
+
+
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+
+    .modal-content,
+    #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+
+    .close {
+      position: fixed;
+      top: 65px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 90%;
+      }
+    }
+  </style>
+
+
+
+
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+
+  <section class="hero" style="background-image: url('http://saebu.unsl.edu.ar/wave.png');">
+    <h1><span>SAEBU</span>Secretaría de Asuntos Estudiantiles y Bienestar Universitario</h1>
+    <div style='background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(245,245,245,1) 50%, rgba(255,255,255,0) 100%);'>
+      <h2>Secretario:<b>Lic. Raul Rafael Paez</b></h2>
+      <p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Teléfono:<a href="tel:5426644520300"> +54
+          (0266) 4520300</a>.
+        Interno: 8136<br>
+        <i class="fa fa-envelope" aria-hidden="true"></i> Email:<a
+          href="mailto:saebuunsl@unsl.edu.ar"><u>saebuunsl@unsl.edu.ar</u></a> <br>
+        <i class="fa fa-envelope" aria-hidden="true"></i> Opcional:<a
+          href="mailto:saebu.unsl.edu@gmail.com"><u>saebu.unsl.edu@gmail.com</u></a>
+      <h2>Subsecretario:<b> Ing. Matías Funes</b></h2>
+      </p>
+
+    </div>
+
+  </section>
+  <div class="wrapper">
+    <h2 class="section__title">NOTICIAS DIARIAS</h2>
+
+    <div class="box__grid">
+      <article class="box" id="comedor">
+        <div class="box__content" href="#"><i class="fa fa-cutlery fa-3x" aria-hidden="true"></i>
+          <h3 class="box__title">Comedor Universitario</h3>
+          <img id="myImg" src="cu/2023/12-10(1).jpg" style="max-height:200px;">
+          <p>Dale click a la imágen para saber cual es el menú de hoy.</p><span class="box__more">Menú del día <i
+              class="fa fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="box"><a class="box__content-2" href="http://saebu.unsl.edu.ar/becas#noticias" target="_blank"><i
+            class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+          <h3 class="box__title">BECAS</h3>
+          <p>ESTUDIANTES PRESELECCIONADAS/OS a las becas que ofrece la
+            UNSL</p><span class="box__more">Leer más<i class="fa fa-arrow-right"></i></span>
+        </a></article>
+      <article class="box"><a class="box__content-2" href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil"><i
+            class="fa fa-medkit fa-3x" aria-hidden="true"></i>
+          <h3 class="box__title">CeSEU</h3>
+          <p>Centro de atención primaria de salud para estudiantes de la UNSL sin cobertura médica.</p><span
+            class="box__more">Leer más <i class="fa fa-arrow-right"></i></span>
+        </a></article>
+
+    </div>
+  </div>
+  </section>
+  <style>
+    .swiper-slide {
+      display: inherit;
+    }
+
+    .blog-slider__pagination {
+      bottom: 0 !important;
+    }
+
+    @media screen and (max-width:769px) {
+      .blog-slider__pagination {
+        bottom: 25px !important;
+      }
+    }
+  </style>
+  <div class="blog-slider">
+
+    <div class="blog-slider__wrp swiper-wrapper">
+
+      
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/26-9/noticia(1).jpg" loading="lazy"
+            alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>Noticias</b> 26 de Septiembre del 2023</span>
+          <div class="blog-slider__title">
+
+          </div>
+          <div class="blog-slider__text">
+        
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario participó de la presentación de la promoción de carreras 2024 este 26 y 27 de septiembre, donde se contó con la presencia de los departamentos de Educación Física y Deporte, Becas, Trabajo Social, Centro de Salud Estudiantil Universitario y Complejo Turíatco y Recreativo la Florida.
+            Estamos ansiosos por recibir a todos los nuevos universitarios 2024 que comienzan este hermoso trayecto siendo parte...
+
+
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer
+            más</a>
+        </div>
+      </div>
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/24-8/noticia(1).jpg" loading="lazy" alt="contraprestación de servicios">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 24 de Agosto del 2023</span>
+          <div class="blog-slider__title">📣📣¡Importante! Becarios/as de contraprestación de servicios</div>
+          <div class="blog-slider__text">
+            ¡La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa que hoy se realizó el pago de las becas creer correspondientes al mes de Julio y Agosto!📚✨🎉...
+               </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer más</a>
+        </div>
+      </div>
+
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/24-8/noticia(1).jpg" loading="lazy" alt="pago de las becas creer correspondientes">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 24 de Agosto del 2023</span>
+          <div class="blog-slider__title"></div>
+          <div class="blog-slider__text">
+            ¡La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa que hoy se realizó el pago de las becas creer correspondientes al mes de Julio y Agosto!📚✨🎉...
+               </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer más</a>
+        </div>
+      </div>
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/17-8/noticia(2).jpg" loading="lazy" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 17 de Agosto del 2023</span>
+          <div class="blog-slider__title"></div>
+          <div class="blog-slider__text">
+            📣 La Secretaria de Asuntos Estudiantiles y Bienestar Universitario, se enorgullece en anunciar la jornada de la Liga Interna Universitaria de Fútbol 11 - 2023, en el marco de los 50 años de nuestra querida universidad. 🎓🏟️...
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer más</a>
+        </div>
+      </div>
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/17-8/noticia(5).jpg" loading="lazy" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 17 de Agosto del 2023</span>
+          <div class="blog-slider__title"></div>
+          <div class="blog-slider__text">
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa: se abre la convocatoria del
+            Ministerio de Cultura de la Nación al II° Concurso Nacional de Cuentos para estudiantes y jóvenes "La
+            historia la ganan los y las que escriben", para...
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer más</a>
+        </div>
+      </div>
+
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/17-8/noticia(4).jpg" loading="lazy"
+            alt="“Paso a la inmortalidad del General José de San Martín">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 17 de Agosto del 2023</span>
+          <div class="blog-slider__title">📅 17 de agosto: Hoy conmemoramos el “Paso a la inmortalidad del General José
+            de San Martín.” 🎩🐎🇦🇷</div>
+          <div class="blog-slider__text">
+            En este día, recordamos y honramos al líder militar y político que desempeñó un papel fundamental en la
+            independencia de Argentina y de varios países sudamericanos...
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer más</a>
+        </div>
+      </div>
+
+
+
+      <div class="blog-slider__item swiper-slide">
+
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/16-8/noticia(1).jpg" loading="lazy" alt="becas de Ayuda Económica">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 16 de Agosto del 2023</span>
+          <div class="blog-slider__title"></div>
+          <div class="blog-slider__text">
+
+            La Secretaría de Asuntos Estudiantiles y Bienestar Universitario informa: hoy miércoles 16 de agosto se
+            acreditaron las becas de Ayuda Económica de los meses de julio y agosto 2023...
+
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer más</a>
+        </div>
+      </div>
+
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/14-8/noticia(1).jpg" loading="lazy"
+            alt="Daniel Alejandro Juárez como Responsable del Complejo Turifico y Recreativo La Florida">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 14 de Agosto del 2023</span>
+          <div class="blog-slider__title"></div>
+          <div class="blog-slider__text">
+            La Secretaria de Asuntos Estudiantiles y Bienestar Universitario informa: hoy en horas de la mañana en el
+            Complejo Turístico y Recreativo La Florida se presentó por designación del Sr Rector CPN Víctor Moriñigo al
+            Sr. Daniel Alejandro Juárez como Responsable del Complejo Turifico y Recreativo La Florida...
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer
+            más</a>
+        </div>
+      </div>
+
+
+
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/9-8/noticia(1).jpg" loading="lazy" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 9 de Agosto del 2023</span>
+          <div class="blog-slider__title">
+          </div>
+          <div class="blog-slider__text">
+            ✍️Desde la Secretaria de Asuntos Estudiantiles y Bienestar Universitario informamos que a partir del día 9
+            de agosto, se deberá presentar DNI físico al retirar tu ticket 🙌🏻 para asegurarnos de brindarte un
+            servicio eficiente y seguro.🍽️
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer
+            más</a>
+        </div>
+      </div>
+
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="static/images/noticias/2023/8-8/noticia(1).jpg" loading="lazy" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code" style="color:black;"><b>NOTICIAS</b> 8 de Agosto del 2023</span>
+          <div class="blog-slider__title">
+          </div>
+          <div class="blog-slider__text">
+            Nos solidarizamos con la comunidad e ante los recientes hechos de inseguridad ocurridos en las cercanías del
+            predio Pedro Presti.y realizara las gestiones pertinente ante los organismo competente. Como Secretaría de
+            Asuntos Estudiantiles y Bienestar Universitario, trabajamos para garantizar la seguridad y el bienestar de
+            todos los estudiantes...
+          </div>
+          <a href="http://saebu.unsl.edu.ar/noticias#noticias" class="blog-slider__button">Leer
+            más</a>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <div class="blog-slider__pagination"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="section section--cta">
+
+    <div class="wrapper">
+      <h2 class="section__title">Mirá nuestro video.</h2>
+      <video controls muted autoplay class='video-yt' src="static/videos/becas.mp4"></video>
+
+
+
+    </div>
+
+
+
+    <div class="total-content-3" style="display:block">
+      <div class="content-wrapper">
+
+
+        <div class="news-card">
+          <a href="dpto-de-mesa-de-entradas.html" class="news-card__card-link">.</a>
+          <img src="static/images/Mesa-de-Entradas.jpg" loading="lazy" alt="mesa de entradas" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Dpto de Mesa de Entradas y Personal</h2>
+            <div class="news-card__post-date"></div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Dpto. de Mesa de Entradas y Personal, así figura el Dpto en el Organigrama
+                de la SAEBU; tareas de interés público...</p>
+              <a href="#" class="news-card__read-more">Leer más<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil" class="news-card__card-link">.</a>
+          <img src="static/images/Centro-De-Salud.jpg" loading="lazy" alt="centro de salud san luis"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Centro de Salud Estudiantil Universitario</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Los Centros de Salud Estudiantil brindan atención primaria de la salud a
+                estudiantes de la Universidad Nacional de San Luis sin cobertura médica o con obra social que no tenga
+                cobertura en la provincia de San Luis.</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/dpto-compras" class="news-card__card-link">.</a>
+          <img src="static/images/Dpto-Compras.jpg" loading="lazy" alt="compras san luis" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Dpto de Compras</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">En el Dpto. de Compras se llevan a cabo los trámites de Licitación Privada
+                para adquirir los insumos de alimentos, necesarios para prestar el servicio de comedor. Como también...
+              </p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/becas" class="news-card__card-link">.</a>
+          <img src="static/images/Becas.jpeg" loading="lazy" alt="becas san luis" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Dpto. Becas</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">El Departamento de Becas, perteneciente de la Secretaria de Asuntos
+                Estudiantiles y Bienestar Universitario de la Universidad Nacional de San Luís, actúa en tres Centros
+                Universitarios: San Luís, Villa de Merlo y Villa Mercedes</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/becas" class="news-card__card-link">.</a>
+          <img src="static/images/Club-Universitario.jpg" loading="lazy" alt="club universitario san luis"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Club Universitario</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Un polo de vinculación entre todos los integrantes de la población
+                universitaria y la comunidad en general a través del deporte y la salud, aportando valores, conciencia e
+                inclusión.</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/dpto-contable" class="news-card__card-link">.</a>
+          <img src="static/images/Dpto-Contable.jpeg" loading="lazy" alt="departamento contable san luis"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Dpto. Contable</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">El Departamento Contable tiene dependencia inmediata de la Dirección
+                Administrativo-Contable, esta oficina tiene una función muy importante ya que tiene a su cargo, dentro
+                de la estructura...</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/dpto-deporte" class="news-card__card-link">.</a>
+          <img src="static/images/Deporte.jpeg" loading="lazy" alt="departamento de educacion fisica y deporte"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Dpto. de Educación Física y Deporte</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">P</span>ara nuestra Universidad la Educación Física y el Deporte se
+                constituye como un elemento fundamental del sistema educativo...</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/dpto-trabajo-social" class="news-card__card-link">.</a>
+          <img src="static/images/Dpto-Trabajo-Social.jpg" loading="lazy" alt="departamento trabajo social san luis"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Dpto. Trabajo Social</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">L</span>a Secretaria de Asuntos Estudiantiles y Bienestar Universitario,
+                cuenta con El Departamento de Trabajo Social , el cual tiene como objetivo brindar ayuda a los y las
+                estudiantes...</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="http://saebu.unsl.edu.ar/camping-universitario" class="news-card__card-link">.</a>
+          <img src="static/images/Camping.jpg" loading="lazy" alt="camping la florida san luis"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Complejo Turístico y Recreativo La Florida</h2>
+
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">El camping universitario la Florida se encuentra en la provincia Argentina
+                de San Luis, a 47 km al noreste de su ciudad capital, a través de la Ruta Provincial N.º 39.</p>
+              <a href="#" class="news-card__read-more">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <a href="#comedor" class="news-card__card-link">.</a>
+          <img src="static/images/Comedor-Universitario.jpg" loading="lazy" alt="comedor san luis"
+            class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Comedor Universitario</h2>
+            <div class="news-card__post-date"></div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Comedor Universitario</p>
+              <a href="#:~:text=Comedor%20Universitario" class="news-card__read-more">Leer más<i
+                  class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <iframe class="iframe-map" title="map saebu"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014.0082796647118!2d-66.3375274088137!3d-33.29835210234619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43953d1ba3de1%3A0xd92420585542b79b!2sComedor%20Universitario%20UNSL!5e0!3m2!1ses-419!2sar!4v1616544830636!5m2!1ses-419!2sar"
+      width="auto" height="450" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>
+
+
+  </div>
+
+
+  <script>
+
+    var modal = document.getElementById("myModal");
+
+
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <footer class="footer" id="contacto" style='color:white;'>
+    <div class="footer__addr">
+      <img loading="lazy" class="footer__logo" src="static/saebu.png" height='55' width="247" alt="logo-saebu"
+        style="pointer-events:none;"><br>
+      <img loading="lazy" class="footer__logo-1" src="static/unsl.png" height='65' width="247" alt="logo-unsl"
+        style="pointer-events:none;">
+      <h2>contacto</h2>
+
+      <address>
+        Rivadavia 1029, San Luis<br>
+
+
+      </address>
+      <div>
+        <a href="mailto:saebuunsl@unsl.edu.ar">saebuunsl@unsl.edu.ar</a> <br>
+        <a href="mailto:saebu.unsl.edu@gmail.com">saebu.unsl.edu@gmail.com</a>
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Redes Sociales</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav__item">
+        <h2 class="nav__title">Camping Universitario</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Sitios de Interés</b></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.unsl.edu.ar">UNSL</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.noticias.unsl.edu.ar">Noticias UNSL</a>
+          </li>
+
+
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2021.</p>
+
+      <div class="legal__links">
+        <span>Hecho con<span class="heart"> ♥</span></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      $('.simple-slider-wrapper').each(function () {
+        const this_slider = $(this);
+
+        const slides = this_slider.find('ul li');
+        const control_prev = this_slider.find('.control_prev');
+        const control_next = this_slider.find('.control_next');
+
+        function slider_init() {
+          if (slides.length > 1) {
+            control_prev.css('display', 'none');
+            control_next.css("display", "none");
+          }
+        }
+        slider_init();
+
+        function moveRight() {
+          // move last child to beginning of list and set list position to -100%
+          this_slider.find('ul li:last-child').prependTo(this_slider.find('ul'));
+          slides.css('left', '-100%');
+          // move all list elements to right
+          slides.stop().animate({ left: 0 }, 500);
+        };
+
+        function moveLeft() {
+          // move all list elements to left
+          const arr = [slides.stop().animate({ left: '-100%' }, 500).promise()]
+          // after animation end move first child to end of list and set list position to 0
+          $.when.apply($, arr).then(function () {
+            this_slider.find('ul li:first-child').appendTo(this_slider.find('ul'));
+            slides.css('left', 0);
+          });
+        };
+
+        control_prev.on("click", function () {
+          if (slides.length > 1) {
+            moveRight();
+          }
+        });
+
+        control_next.on("click", function () {
+          if (slides.length > 1) {
+            moveLeft();
+          }
+        });
+
+        // autoplay
+        function setAutoplay() {
+          let is_slider_on = true;
+          let autoplay = setInterval(function () {
+            if (slides.length > 1) {
+              moveLeft();
+            }
+          }, 3500);
+
+          this_slider.on('mouseenter', function () {
+            clearInterval(autoplay);
+            is_slider_on = false;
+          });
+
+          this_slider.on('mouseleave', function () {
+            if (!is_slider_on) {
+              autoplay = setInterval(function () {
+                moveLeft();
+              }, 3500);
+              is_slider_on = true;
+            }
+          });
+        }
+        setAutoplay();
+      });
+
+    });
+
+  </script>
+
+
+  <script src="19e7896a5a.js" defer></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="javastyle.js"></script>
+</body>
+
+</html>

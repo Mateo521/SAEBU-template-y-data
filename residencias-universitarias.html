@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Residencias Universitarias</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Residencias universitarias">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="pagination/paginga.jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="static/saebu-logo.png" />
+</head>
+
+<body>
+
+
+  <div class="content3">
+
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <div class="navbar">
+        <a href="http://saebu.unsl.edu.ar"> <img src="static/saebu.png" width="50" height="100" loading="lazy" alt="Saebu Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+
+
+
+
+
+        <ul class="nav no-search">
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU
+                  Villa de Merlo</a></li>
+              <li style='margin-right: 30px;' class="nav-item"><a href="http://saebu.unsl.edu.ar">Inicio</a></li>
+              <li style='margin-right: 30px;' class="nav-item" class="nav-item"><a href="http://saebu.unsl.edu.ar/ingresantes">Ingresantes 2022</a></li>
+              <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+                  href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">V Mercedes</a></li>
+              <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+                  href="http://saebu.unsl.edu.ar/saebu-merlo">V Merlo</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo social</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/becas">Dpto.
+                  Becas</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro de Salud Estudiantil</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="#">Comedor Universitario</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/dpto-deporte">Deporte</a></li>
+              <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+                  href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a></li>
+              <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada">Dpto. Mesa
+                  de Entrada</a></li>
+              <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-compras">Dpto. Compras</a></li>
+              <li style="margin-right:30px;" class="nav-item"><a
+                  href="http://saebu.unsl.edu.ar/institucional">Institucional</a></li>
+              <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/camping-universitario">Camping
+                  universitario</a></li>
+              <li style="margin-right:30px;" class="nav-item"><a href="#contacto">contacto</a></li>
+              <li style="margin-right:30px;" class="nav-item"><a href="http://saebu.unsl.edu.ar/noticias">Noticias</a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+  <nav class="navbar-display-0" role='navigation'>
+
+        <ul class="menu">
+
+            <li class="menu-item"><a class="services" href="#">Departamentos</a>
+                <ul class="sub-menu">
+                    <li class="menu-item"><a href="http://saebu.unsl.edu.ar/becas" style="font-size: 14px;">Becas</a>
+                    </li>
+                    <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-compras" style="font-size: 12px;">Dpto.
+                            Compras y
+                            Contrataciones</a></li>
+                    <li class="menu-item">
+                        <a href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Comedor Universitario</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="http://saebu.unsl.edu.ar/dpto-deporte" style="font-size: 11px;">Dpto. Eduación física y
+                            deporte</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Gimnasio</a></li>
+                            <li class="menu-item"><a href="#">Club universitario</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada"
+                            style="font-size: 14px;">Dpto. Mesas de Entrada</a></li>
+
+                    <li class="menu-item">
+
+                        <a href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo Social</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro
+                                    de Salud</a>
+                            </li>
+
+                            <ul class="sub-menu">
+
+                            </ul>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li class="menu-item">
+
+                <a href="http://saebu.unsl.edu.ar/camping-universitario">Camping Universitario</a>
+                <ul class="sub-menu">
+                    <li class="menu-item"><a href="http://saebu.unsl.edu.ar/historia-del-camping">Historia del
+                            Camping</a>
+                    </li>
+
+                    <ul class="sub-menu">
+
+                    </ul>
+            </li>
+        </ul>
+    </nav>
+
+  <style>
+    .parallax-20 {
+      font-size: 15px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background-image: url(http://www.noticias.unsl.edu.ar/wp-content/uploads/2018/10/DSCN2674-3.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center
+    }
+  </style>
+
+  <div id="parallax-world-of-ugg">
+
+
+    <section>
+      <div class="parallax-20">
+
+        <h2>Residencias Universitarias</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="block">
+
+        <p><span class="first-character sc">D</span>epartamento de Mesa de Entradas y Personal, tareas de interés
+          público:</p>
+        <p class="line-break margin-top-10"></p>
+        <p class="margin-top-10">
+          • Recepción de la documentación de los estudiantes(universitarios y de la ENJPP) que quieran acceder al
+          comedor...
+          <br> • Recepción de notas, expedientes, actuaciones...
+          <br> • Tambien podemos brindar información o asesoramiento a quien lo necesite.
+        </p>
+
+
+        <p class="line-break margin-top-10"></p>
+
+
+        <p style='font-size:20px;'> <b>contactos:</b> </p>
+
+
+        Teléfono: 4520300 interno 8139<br>
+
+        <b> Email:</b> <a href="mailto:mesadeentradassaebu@gmail.com"> mesadeentradassaebu@gmail.com </a> <br>
+
+
+
+      </div>
+
+
+
+
+    </section>
+
+
+
+  </div>
+
+
+  <footer class="footer" id="contacto" style='color:white;'>
+    <div class="footer__addr">
+      <img loading="lazy" class="footer__logo" src="static/saebu.png" height='55' width="247" alt="logo-saebu"
+        style="pointer-events:none;"><br>
+      <img loading="lazy" class="footer__logo-1" src="static/unsl.png" height='65' width="247" alt="logo-unsl"
+        style="pointer-events:none;">
+      <h2>contacto</h2>
+
+      <address>
+        Rivadavia 1029, San Luis<br>
+
+
+      </address>
+      <div>
+        <a href="mailto:saebuunsl@unsl.edu.ar">saebuunsl@unsl.edu.ar</a> <br>
+        <a href="mailto:saebu.unsl.edu@gmail.com">saebu.unsl.edu@gmail.com</a>
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Redes Sociales</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav__item">
+        <h2 class="nav__title">Camping Universitario</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Sitios de Interés</b></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.unsl.edu.ar">UNSL</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.noticias.unsl.edu.ar">Noticias UNSL</a>
+          </li>
+
+
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2021.</p>
+
+      <div class="legal__links">
+        <span>Hecho con<span class="heart"> ♥</span></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="19e7896a5a.js" defer></script>
+  <script src="swiper/swiper-bundle.min.js" defer></script>
+  <script src="jquery.min.js" defer></script>
+  <script src="javastyle.js" defer></script>
+</body>
+
+</html>

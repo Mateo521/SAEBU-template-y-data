@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <title>Centro de Salud Estudiantil</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description"
+    content="Los Centros de Salud Estudiantil brindan atención primaria de la salud a estudiantes de la Universidad Nacional de San Luis sin cobertura médica o con obra social que no tenga cobertura en la provincia de San Luis.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5,maximum-scale=5">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="jquery.min.js"></script>
+  <script src="pagination/paginga.jquery.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function () {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      }
+      else {
+        $('html, body').show();
+      }
+    });
+  </script>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="static/saebu-logo.png" />
+</head>
+
+<body>
+
+
+  <div class="content3">
+
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <div class="navbar">
+        <a href="http://saebu.unsl.edu.ar"> <img src="static/saebu.png" width="50" height="100" loading="lazy"
+            alt="Saebu Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+
+
+
+
+
+        <ul class="nav no-search">
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU
+              Villa de Merlo</a></li>
+          <li style='margin-right: 30px;' class="nav-item"><a href="http://saebu.unsl.edu.ar">Inicio</a></li>
+          <li style='margin-right: 30px;' class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/ingresantes">Ingresantes 2022</a></li>
+          <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">V Mercedes</a></li>
+          <li style='margin-right: 30px;' id="mob-item" class="nav-item" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/saebu-merlo">V Merlo</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo social</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="http://saebu.unsl.edu.ar/becas">Dpto.
+              Becas</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro de Salud Estudiantil</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a href="#">Comedor Universitario</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-deporte">Deporte</a></li>
+          <li style='margin-right: 30px;' class="nav-item" id="ref"><a
+              href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada">Dpto. Mesa
+              de Entrada</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/dpto-compras">Dpto. Compras</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a
+              href="http://saebu.unsl.edu.ar/institucional">Institucional</a></li>
+          <li style="margin-right:30px;" id="ref"><a href="http://saebu.unsl.edu.ar/camping-universitario">Camping
+              universitario</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a href="#contacto">contacto</a></li>
+          <li style="margin-right:30px;" class="nav-item"><a href="http://saebu.unsl.edu.ar/noticias">Noticias</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <nav class="navbar-display-1" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Sedes SAEBU</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-villa-mercedes">SAEBU Villa Mercedes</a></li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/saebu-merlo">SAEBU Merlo</a></li>
+        </ul>
+    </ul>
+  </nav>
+
+
+  <nav class="navbar-display-0" role='navigation'>
+
+    <ul class="menu">
+
+      <li class="menu-item"><a class="services" href="#">Departamentos</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/becas" style="font-size: 14px;">Becas</a>
+          </li>
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-compras" style="font-size: 12px;">Dpto.
+              Compras y
+              Contrataciones</a></li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-contable">Dpto. Contable</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Comedor Universitario</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="http://saebu.unsl.edu.ar/dpto-deporte" style="font-size: 11px;">Dpto. Eduación física y
+              deporte</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Gimnasio</a></li>
+              <li class="menu-item"><a href="#">Club universitario</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/dpto-de-mesa-de-entrada"
+              style="font-size: 14px;">Dpto. Mesas de Entrada</a></li>
+
+          <li class="menu-item">
+
+            <a href="http://saebu.unsl.edu.ar/dpto-trabajo-social">Dpto. Trabajo Social</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="http://saebu.unsl.edu.ar/centro-de-salud-estudiantil">Centro
+                  de Salud</a>
+              </li>
+
+              <ul class="sub-menu">
+
+              </ul>
+          </li>
+
+        </ul>
+
+      </li>
+
+
+      <li class="menu-item">
+
+        <a href="http://saebu.unsl.edu.ar/camping-universitario">Camping Universitario</a>
+        <ul class="sub-menu">
+          <li class="menu-item"><a href="http://saebu.unsl.edu.ar/historia-del-camping">Historia del
+              Camping</a>
+          </li>
+
+          <ul class="sub-menu">
+
+          </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="parallax-world-of-ugg">
+
+
+    <section>
+      <div class="parallax-eleven">
+
+        <h2>Centro de Salud Estudiantil Universitaria</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="block">
+
+        <p><span class="first-character sc">L</span>os Centros de Salud Estudiantil brindan atención primaria de la
+          salud a estudiantes de la Universidad Nacional de San Luis sin cobertura médica o con obra social que no tenga
+          cobertura en la provincia de San Luis.
+
+        <p style="font-size: 15px; text-align: center; "> <b> Vías de comunicación sede San Luis:</b></p>
+        <div style="font-family:sans-serif; ">
+          <b> Tel:</b> <a rel="noopener" href="tel:2664520322">2664520322</a> interno 8820 <br>
+          <b>E-mail:</b> <a rel="noopener" href="mailto:centrodesaludunsl@gmail.com"> centrodesaludunsl@gmail.com</a>
+          <br>
+          <b><a target="_blank" rel="noopener" href="https://www.instagram.com/ceseu.unsl/"><u>Instagram</u></a> y <a
+              rel="noopener" target="_blank" href="https://www.facebook.com/ceseu.unsl"> <u>facebook</u></a>:</b>
+          @ceseu.unsl <br>
+          <b>Dirección: </b><a target="_blank" rel="noopener" href="https://goo.gl/maps/UEAmcD6j5XUkGp2K8">Rivadavia
+            1359</a> <br>
+          <b>Horarios de atención: </b>lunes a viernes de 9 a 13 hs <br>
+
+          <p style="font-size: 15px; text-align: center; "> <b>Vías de comunicación sede Villa Mercedes:</b></p>
+
+          <b> Tel:</b><a href="tel:2657531030"> 2657531030</a> <br>
+          <b>E-mail: </b><a href="mailto:cuseunsl@gmail.com"> cuseunsl@gmail.com </a><br>
+          <b>Dirección: </b><a rel="noopener" target="_blank" href="https://goo.gl/maps/Kmpyfhiv6811Wo4JA">Junín 269</a>
+          (entre 25 de Mayo y Almafuerte) <br>
+          <b>Horarios de atención: </b>lunes a viernes de 8 a 13 hs <br>
+
+        </div>
+        </p>
+        <p class="line-break margin-top-10"></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="parallax-twelve">
+        <h2>INSCRIPCIONES</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="block">
+        <p><span class="first-character ny">C</span>
+          omo registrarse en los Centros de Salud:
+          Las/os estudiantes regulares de la UNSL deben enviar en PDF: DNI, certificado de alumno regular, certificación
+          negativa de ANSES y nº de celular a <a href="mailto:centrodesaludunsl@gmail.com">
+            centrodesaludunsl@gmail.com</a> (sede San Luis) o <a href="mailto:cuseunsl@gmail.com">
+            cuseunsl@gmail.com</a> (sede Villa Mercedes).
+
+
+        <p style="text-align: center; font-size: 21px;"> <b> Turnos para Certificado de salud-ingreso</b> </p>
+        <section>
+
+
+
+          <p><b> Requisitos para el certificado:</b> <br>
+            <b> -Con obra social</b>: pueden ir a su médico y solicitar la orden de análisis. <br>
+            <b> -Sin cobertura médica</b>: pueden solicitar la orden en los Centros de Salud Estudiantil.
+          </p>
+
+          <p>Los análisis se deben realizar en una entidad pública o privada (no se realizan en los centros de salud de
+            la UNSL). Deben enviar los resultados de los análisis y el calendario de vacunación a <a
+              href="mailto:ceseucertificados@gmail.com">ceseucertificados@gmail.com</a> (sede San Luis) o <a
+              href="mailto:cuseunsl@gmail.com"> cuseunsl@gmail.com</a> (sede Villa Mercedes).
+            <br><br> Quienes realicen el certificado en nuestros centros de salud, es necesario que completen el
+            siguiente formulario <a href="https://forms.gle/dMUhyxNZgBmgbnvy8"><b>
+                forms.gle/dMUhyxNZgBmgbnvy8</b></a><br>
+            <br><b> Certificado para comedor sin TACC </b><br>
+            Solicitar turno por teléfono de lunes a viernes de 9 a 13 hs, asistir a la consulta con estudio/s de
+            diagnóstico. <br>
+            <br> <b> Programa REMEDIAR sede San Luis y Villa Mercedes</b>: los medicamentos recetados, en stock en
+            nuestras sedes pueden ser entregados de forma gratuita en horarios de atención.
+
+
+          <p style="text-align: center; font-size: 21px;"> <b> Turnos San Luis</b> </p>
+          <p> Turnos <b>Kinesiología</b> y <b>Fisiatría</b>, <b>Nutrición</b>, <b>Clínica Médica</b>,
+            <b>Odontología</b>, <b>Oftalmología</b>, <b>Psicología</b>: de lunes a viernes de 9 a 13 hs.
+          </p>
+          <p style="text-align: center; font-size: 21px;"> <b> Turnos Villa Mercedes</b> </p>
+          <p>Turnos <b> Odontología</b>, <b>Psicología</b>, <b>Nutrición</b>, <b>Clínica Médica</b>, <b>Ginecología</b>
+            por teléfono de lunes a viernes de 8 a 13 hs.
+          </p>
+          <P><b> Debido a los protocolos por pandemia COVID-19 solicitamos que asistan a los centros de salud con turno
+              programado.</b></P>
+      </div>
+      <p class="line-break margin-top-10">NOTICIAS</p>
+    </section>
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <div class="paginate-no-scroll 5" id='noticias'>
+    <div class="items" style="padding-left:15px;">
+
+      <div>
+        <div class="card">
+          <h2>Todos los miércoles de 14:00 a 17:30hs en el Centro de Salud Estudiantil Universitaria (Rivadavia 1359)
+            iniciamos con la prevención, asesoramiento y testeo en VIH y sífilis. Los testeos son voluntarios, gratuitos
+            y confidenciales. ¡Te esperamos!</h2>
+
+          <h5>1 de Agosto del 2023</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/ceseu/2023/1-8/noticia(1).jpg"
+              alt="prevención, asesoramiento y testeo en VIH y sífilis">
+          </div>
+          <p>
+            🩸 Este nuevo servicio es brindado por un trabajo en conjunto entre el Centro de Salud Estudiantil
+            Universitaria, que depende de la Secretaria de Asuntos Estudiantiles y Bienestar Universitario, junto al
+            Centro de Prevención, Asesoramiento y Testeo (CePAT) para VIH e ITS, que está enmarcado en acciones de
+            cooperación interinstitucional entre la Facultad de Ciencias de la Salud y la Facultad de Psicología. Estas
+            acciones se coordinarán con el Laboratorio de Bioquímica Clínica de la Facultad de Química, Bioquímica y
+            Farmacia
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <div>
+        <div class="card">
+          <h2>Prácticas Preprofesionales Supervisadas de estudiantes de la carrera Lic. en Kinesiología y Fisiatría</h2>
+
+          <h5>7 de Julio del 2023</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/ceseu/2023/7-7/noticia(1).png"
+              alt="Prácticas Preprofesionales Supervisadas de estudiantes de la carrera Lic. en Kinesiología y Fisiatría">
+          </div>
+          <p>
+
+            Esta mañana los alumnos Julián Boso y María Lilen Lucero finalizaron las prácticas de 4to año de la materia
+            "internado rotatorio 1" de la carrera Lic. En Kinesiología y Fisiatría, de la Facultad de Ciencias de la
+            Salud de la UNSL.
+            <br><br>
+            Las actividades estuvieron supervisadas por el instructor de prácticas, Lic. Matías Lucero Sastre en las
+            instalaciones del Centro de Salud Estudiantil.
+            <br><br>
+            Los estudiantes también participaron activamente de la Jornada Interdisciplinaria del Centro de Salud
+            Estudiantil, dónde estuvieron presentes el secretario de SAEBU, Lic. Raul Rafael Paez y la Coordinadora del
+            CESEU, Bioq Karina Giordani.
+            <br><br>
+            Celebramos poder ser elegidos para que cada vez más estudiantes hagan uso del CESEU como parte de su
+            trayecto universitario.
+
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>Jornada de Salud Interdisciplinaria del Centro de Salud Estudiantil
+          </h2>
+          <h3> 27 de Junio del 2023</h3>
+          <div class="fakeimg-h">
+            <div class="simple-slider-wrapper">
+              <div class="control_prev"><span></span></div>
+              <div class="control_next"><span></span></div>
+              <div class="simple-slider-overflow-hidden">
+                <ul class="simple-slider">
+                  <li class="simple-slider-element 1">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(1).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 2">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(2).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 3">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(3).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 4">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(4).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 5">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(5).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+
+                  <li class="simple-slider-element 7">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(6).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 8">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(7).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 9">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(8).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                  <li class="simple-slider-element 9">
+                    <image class="slide-image" src="static/images/noticias/ceseu/2023/27-6/noticia(9).png"
+                      loading='lazy' alt='Jornada de Salud Interdisciplinaria' />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+          <p>
+            La actividad tuvo lugar este lunes en el microcine de la UNSL, el motivo fue celebrar el duodécimo
+            aniversario del Centro de Salud Estudiantil y los 50 años de la Universidad Nacional de San Luis.
+            <br><br>
+            En la misma estuvieron presente el Secretario de SAEBU, Lic. Raúl Rafael Paez y la Coordinadora del CESEU,
+            Bioq. Karina Giordani junto al equipo del Centro de Salud Estudiantil y profesionales invitados.
+            <br><br>
+            También se compartió un rico coffee break saludable que estuvo a cargo de nuestra lic en Nutrición.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="card">
+          <h2>📌 Jornadas de Salud Interdisciplinaria del Centro de Salud Estudiantil</h2>
+
+          <h5>13 de Junio del 2023</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/ceseu/2023/13-3/noticia(1).jpg"
+              alt="Jornadas de Salud Interdisciplinaria del Centro de Salud Estudiantil"></div>
+          <p>
+
+            Para celebrar nuestro aniversario les traemos una propuesta de formación y capacitación en diversas áreas de
+            la salud.
+            <br><br>
+            La jornada está destinada a la comunidad universitaria y publico en general. ¡Se entregarán certificados!
+            <br><br>
+
+            Formulario de inscripción: <br>
+            <b><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf95T2-STCWm56sO73UjiqvAyUigSv_VtQAg51p_UjzBn4cJQ/viewform"
+                target="_blank">docs.google.com/forms</a></b> <br>
+
+            🗓️ Te esperamos el 26 de junio a partir de las 8am, en el Microcine de la UNSL
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card">
+          <h2>📢 ¡Nuevas especialidades por la tarde!</h2>
+
+          <h5>13 de Marzo del 2023</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/ceseu/2023/13-3/noticia(1).jpg"
+              alt="especialidades por la tarde"></div>
+          <p>
+
+            El Centro de Salud Estudiantil Universitario está brindando atención los días martes, miércoles y jueves por
+            la tarde. <br><br>
+
+            Recordamos que para solicitar turno se deben acercar a 📌 Rivadavia 1359 o llamar al número ☎️ <a
+              href="tel:2664530000"><b>2664530000</b></a> int 8820
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+
+
+          <h5>7 de Abril del 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/ceseu/2022/7-4/noticia(2).jpg"
+              alt="Día Mundial de la Salud"></div>
+          <p>
+            Para ingresar o renovar el servicio del centro de salud enviar a: <br>
+            📧<a href="mailto:centrodesaludunsl@gmail.com"><b>centrodesaludunsl@gmail.com</b></a> <br>
+            ✔Certificado de alumno Regular (2022/23) <br>
+            ✔Certificación Negativa ANSES <br>
+            ✔Foto del DNI (Frente y Dorso) <br>
+            ✔Domicilio actual <br>
+            ✔Nro. de Teléfono
+
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+
+
+          <h5>7 de Abril del 2022</h5>
+          <div class="fakeimg"><img id="imgs" loading='lazy' src="static/images/noticias/ceseu/2022/7-4/noticia(1).jpg"
+              alt="Día Mundial de la Salud"></div>
+          <p>
+            🗓️ El 7 de abril se celebra el Día Mundial de la Salud, en reconocimiento a la salud como un derecho básico
+            y universal, así como fomentar el acceso a la atención sanitaria de calidad en todas las regiones del mundo,
+            especialmente en la población de escasos recursos. <br><br>
+
+            ¿Cómo se originó este Día Internacional? <br>
+            En el año 1948 la Asamblea Mundial de la Salud proclamó el 7 de abril como Día Mundial de la Salud. Esta
+            fecha fue escogida en conmemoración a la fundación de la Organización Mundial de la Salud (OMS), para
+            generar conciencia sobre las enfermedades mortales mundiales y fomentar hábitos sanos en las personas.
+            La celebración de este día internacional se lleva a cabo desde el 7 de abril de 1950.
+
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="pager">
+      <a href="#noticias">
+        <div class="firstPage">&laquo;</div>
+        <div class="previousPage">&lsaquo;</div>
+        <div class="pageNumbers"></div>
+        <div class="nextPage">&rsaquo;</div>
+        <div class="lastPage">&raquo;</div>
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <style>
+    .simple-slider-wrapper {
+      width: 100%;
+      height: auto;
+      max-width: 1000px;
+      margin: 0 auto 30px auto;
+      position: relative;
+    }
+
+    .control_prev,
+    .control_next {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99999;
+      width: 48px;
+      height: 48px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 38px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .control_prev {
+      width: 30px;
+      height: 30px;
+      left: 0;
+    }
+
+    .control_next {
+      width: 30px;
+      height: 30px;
+      right: 0;
+    }
+
+    .control_prev span:before,
+    .control_next span:before {
+      width: 30px;
+      height: 30px;
+      content: "";
+
+      position: absolute;
+    }
+
+    .control_prev span:before {
+      background: url('http://saebu.unsl.edu.ar/static/izq.svg') no-repeat;
+      top: 0;
+      right: 0;
+    }
+
+    .control_next span:before {
+      background: url('http://saebu.unsl.edu.ar/static/der.svg') no-repeat;
+      top: 0;
+      left: 0;
+    }
+
+    .simple-slider-overflow-hidden {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      /*	padding: 0 30px; */
+    }
+
+    .simple-slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .simple-slider-element {
+      width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-image {
+      object-fit: contain;
+      height: 150%;
+      width: auto
+    }
+
+    body {
+      background: #f1f1f1;
+    }
+
+    .row {
+      position: relative;
+      padding: 0 15px 15px 15px;
+
+      max-width: 1560px;
+
+    }
+
+    .leftcolumn1 {
+      float: left;
+      width: 75%;
+    }
+
+    .rightcolumn {
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1350px;
+
+
+    }
+
+    .fakeimg1 {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+
+    }
+
+    .fakeimg {
+
+      height: auto;
+
+
+    }
+
+    .fakeimg img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+      max-width: 700px;
+
+
+    }
+
+    .fakeimg-h img {
+      position: relative;
+      border-radius: 15px;
+      width: 100%;
+
+
+    }
+
+    .fakeimg-0 img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+
+
+    }
+
+    #imgs {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card h2 {
+      padding-top: 13px;
+    }
+
+    .card {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+    }
+
+    .items {
+      padding: 15px;
+      max-width: 1300px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+    }
+
+    .card1 {
+      border-radius: 10px;
+      position: relative;
+      padding: 0 30px 15px 20px;
+      background-color: white;
+      margin-top: 20px;
+
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0 15px 0 15px;
+
+      }
+
+      .control_prev span:before,
+      .control_next span:before {
+        width: 15px;
+        height: 15px;
+
+      }
+    }
+  </style>
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      $('.simple-slider-wrapper').each(function () {
+        const this_slider = $(this);
+
+        const slides = this_slider.find('ul li');
+        const control_prev = this_slider.find('.control_prev');
+        const control_next = this_slider.find('.control_next');
+
+        function slider_init() {
+          if (slides.length > 1) {
+            control_prev.css('display', 'block');
+            control_next.css("display", "block");
+          }
+        }
+        slider_init();
+
+        function moveRight() {
+          // move last child to beginning of list and set list position to -100%
+          this_slider.find('ul li:last-child').prependTo(this_slider.find('ul'));
+          slides.css('left', '-100%');
+          // move all list elements to right
+          slides.stop().animate({ left: 0 }, 500);
+        };
+
+        function moveLeft() {
+          // move all list elements to left
+          const arr = [slides.stop().animate({ left: '-100%' }, 500).promise()]
+          // after animation end move first child to end of list and set list position to 0
+          $.when.apply($, arr).then(function () {
+            this_slider.find('ul li:first-child').appendTo(this_slider.find('ul'));
+            slides.css('left', 0);
+          });
+        };
+
+        control_prev.on("click", function () {
+          if (slides.length > 1) {
+            moveRight();
+          }
+        });
+
+        control_next.on("click", function () {
+          if (slides.length > 1) {
+            moveLeft();
+          }
+        });
+
+        // autoplay
+        function setAutoplay() {
+          let is_slider_on = true;
+          let autoplay = setInterval(function () {
+            if (slides.length > 1) {
+              moveLeft();
+            }
+          }, 3000);
+
+          this_slider.on('mouseenter', function () {
+            clearInterval(autoplay);
+            is_slider_on = false;
+          });
+
+          this_slider.on('mouseleave', function () {
+            if (!is_slider_on) {
+              autoplay = setInterval(function () {
+                moveLeft();
+              }, 3000);
+              is_slider_on = true;
+            }
+          });
+        }
+        setAutoplay();
+      });
+
+    });
+
+    $(function () {
+      $(".paginate").paginga({
+
+      });
+
+      $(".paginate-page-2").paginga({
+        page: 2
+      });
+
+      $(".paginate-no-scroll").paginga({
+        scrollToTop: false
+      });
+    });
+  </script>
+
+
+  <style>
+    .pager {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pager div {
+      float: left;
+      border: 1px solid gray;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .pager .pageNumbers a {
+      display: inline-block;
+      padding: 0 10px;
+      color: gray;
+    }
+
+    .pager .pageNumbers .active {
+      color: orange;
+    }
+  </style>
+
+
+  <footer class="footer" id="contacto" style='color:white;'>
+    <div class="footer__addr">
+      <img loading="lazy" class="footer__logo" src="static/saebu.png" height='55' width="247" alt="logo-saebu"
+        style="pointer-events:none;"><br>
+      <img loading="lazy" class="footer__logo-1" src="static/unsl.png" height='65' width="247" alt="logo-unsl"
+        style="pointer-events:none;">
+      <h2>contacto</h2>
+
+      <address>
+        Rivadavia 1029, San Luis<br>
+
+
+      </address>
+      <div>
+        <a href="mailto:saebuunsl@unsl.edu.ar">saebuunsl@unsl.edu.ar</a> <br>
+        <a href="mailto:saebu.unsl.edu@gmail.com">saebu.unsl.edu@gmail.com</a>
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Redes Sociales</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav__item">
+        <h2 class="nav__title">Camping Universitario</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saebusan/"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Saebu-San-Luis-1381905295466591"><i
+                class="fab fa-facebook"> </i> Facebook</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/saebutw"> <i class="fab fa-twitter"></i>
+              Twitter</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Sitios de Interés</b></h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.unsl.edu.ar">UNSL</a>
+          </li>
+
+          <li>
+            <a target="_blank" rel="noreferrer" href="http://www.noticias.unsl.edu.ar">Noticias UNSL</a>
+          </li>
+
+
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2021.</p>
+
+      <div class="legal__links">
+        <span>Hecho con<span class="heart"> ♥</span></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="19e7896a5a.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="javastyle.js"></script>
+
+</body>
+
+</html>
